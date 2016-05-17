@@ -12,4 +12,4 @@ i made some changes.
 
 Rina has joined the game.
 
-Yao has joined as well!
+Yao has joined as well!hahah
