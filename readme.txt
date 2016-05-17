@@ -8,6 +8,10 @@ note:
 
 level page: players can drag and drop garbages after pics flip over in deaktop mode.
 
+
 i made some changes.
 
 Rina has joined the game.
+
+rina made a new change!!!!!!!!!!!!!!!1
+
