@@ -7,3 +7,5 @@ memorize all garbage pics before they flip over, and classify them and throw the
 note:
 
 level page: players can drag and drop garbages after pics flip over in deaktop mode.
+
+Hello this is jordan. Take this off later...
