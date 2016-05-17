@@ -8,9 +8,4 @@ note:
 
 level page: players can drag and drop garbages after pics flip over in deaktop mode.
 
-i made some changes.
-
-Rina has joined the game.
-
-Yao has joined as well!hahah
-Rina shi nushen hahahahahahahahahah 
+rina made a new change!!!!!!!!!!!!!!!1
