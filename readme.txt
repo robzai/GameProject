@@ -13,3 +13,4 @@ i made some changes.
 Rina has joined the game.
 
 Yao has joined as well!hahah
+Rina shi nushen hahahahahahahahahah 
