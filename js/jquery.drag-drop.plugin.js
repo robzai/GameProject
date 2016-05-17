@@ -1,4 +1,9 @@
 (function($) {
+var matchJS=document.createElement("script");
+matchJS.setAttribute("type","text/javascript");
+matchJS.setAttribute("src","./js/match.js");
+document.body.appendChild(matchJS);
+
     var defaultOptions = {
         makeClone: false,  // Drag a clone of the source, and not the actual source element
         sourceClass: null, // Class to apply to source element when dragging a clone of the source element
@@ -19,10 +24,15 @@
             return $dst.hasClass("drop") || $dst.parents(".drop").size()>0;
         },
 
-        // Default is to move the element in the DOM and insert it into the element where it is dropped
+ //drop   // Default is to move the element in the DOM and insert it into the element where it is dropped
         didDrop: function($src, $dst) {
             //$src.appendTo($dst);
-			$src.hide();
+			//function in match.js
+			getSrc($src);
+			getCanType($dst);
+			//alert(canType);
+			if (match())
+				$src.hide();	
         }
     };
 
@@ -33,9 +43,7 @@
     var dragOffsetX, dragOffsetY; // Position difference from drag-point to active elements left top corner
     var limits;
 	
-	//global var set by ourselves
-	var garbageType;
-	var canType;
+
 
     // Private helper methods
     function cancelDestElement(options) {
@@ -85,9 +93,8 @@
                 var offset = $sourceElement.offset();
                 var width = $sourceElement.width();
                 var height = $sourceElement.height();
-				
-				var garbageType = $sourceElement.attr("data-type");
-				
+				//function in match.js				
+				getGarbageType($sourceElement);
                 if (event.type=="touchstart") {
                     //dragOffsetX = event.originalEvent.touches[0].clientX - offset.left;
 					dragOffsetX = event.originalEvent.touches[0].clientX;
@@ -179,20 +186,6 @@
             if (limits) {
                 posX = Math.min(Math.max(posX, limits.minX), limits.maxX);
                 posY = Math.min(Math.max(posY, limits.minY), limits.maxY);
-				//alert(limits.minX);
-				/*
-				if(posX<limits.minX)
-					posX = limits.minX;
-				else if(posX>limits.maxX)
-					posX = limits.maxX;
-				else
-					posX = posX;
-                if(posY<limits.minY)
-					posY = limits.minY;
-				else if(posY>limits.maxY)
-					posY = limits.maxY;
-				else
-					posY = posY;*/
 				
             }
             $activeElement.css({ left: posX, top: posY });
