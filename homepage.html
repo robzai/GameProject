@@ -1,26 +1,30 @@
-<!DOCTYPE html>
+
 <html lang="en">
 	<head>
-		<title>Homepage</title>
-		<meta charset="utf-8">
-		
-		<link rel="stylesheet" type="text/css" href="style/freethrow.css"/>
+		<title>Home page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/homeNLevel.css" rel="stylesheet" type="text/css" />
+		<link href="css/superhero/bootstrap.min.css" rel="stylesheet" media="screen">	
 	</head>
-	<body>
 	
-		<div>
-			<img class="banner" src="images/banner.png" alt="Free Throw banner">
+	<body> 
+		<div class = "container">
+			<div class = "row">
+				<div class="col-xs-4">
+					<div class = "main">
+						<div id="bannerPosition">
+							<img class="banner" src="images/banner.png" alt="Free Throw banner">
+							<br/>
+							<br/>
+							<br/>
+							<a href="levelpage.html"><img class="bannerNButtons" src="images/startbutton.png" alt="start"></a>
+							<br/>
+							<a href="tutorial.html"><img class="bannerNButtons" src="images/howtoplaybutton.png" alt="howtoplay"></a>
+						</div>
+					</div>	
+				</div>
+			</div>
 		</div>
-		<br/>
-		
-		<!--Two button images-->
-		<div>
-			<a href="levelpage.html"><img class="homepageButtonsCenter" src="images/startbutton.png" alt="start"></a>
-			<br/>
-			<br/>
-			<a href="tutorial.html"><img class="homepageButtonsCenter" src="images/howtoplaybutton.png" alt="howtoplay"></a>
-		</div>
-
-		
 	</body>
+
 </html>
