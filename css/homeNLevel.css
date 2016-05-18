@@ -1,0 +1,34 @@
+
+.main {
+	background-image: url(pic/homeBG.png);
+	width: 320;
+	height: 480;
+}
+
+
+/*------------banner and buttons for homepage and choose level page------------*/
+div#bannerPosition
+{
+	
+	position: absolute;
+	top: 10%;
+}
+
+img.bannerNButtons {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/*----picture for choose level, pass and fail-------------*/
+/*.alignFrame
+{
+	position: fixed;
+    bottom: 10%;
+    margin-left: 50px;
+}
+*/
+
+
+
