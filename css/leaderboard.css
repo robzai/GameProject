@@ -1,0 +1,68 @@
+table {
+	text-align: center;
+	height:250px;
+	width: 250px;
+	color: black;
+}
+
+table th td {
+	height:30px;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+table tr {
+	height:30px;
+}
+
+table tr .first {
+	color:f4ea26;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+table tr .second {
+	color:b7b7ac;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+table tr .third {
+	color:aa6d51;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+table tr td {
+	width: 90px;
+	font-size: 15px;
+}
+
+table tr td:first-child{
+	width: 40px;
+}
+
+.frame {
+	position: absolute;
+	border: 1px solid #000000;
+	border-radius:20px;
+	width: 260px;
+	height: 125px;
+	margin-top: 40px;
+	float: left;
+	background-color: #ffffff;
+	opacity: 0.1;
+}
+
+.main {
+	background-image: url(pic/bg1.png);
+	width: 320px;
+	height: 480px;
+}
+
+.scoretable {
+	width: 280px;
+	height: 300px;
+	padding-top: 160px;
+	margin-left: 8%;
+}
