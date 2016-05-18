@@ -1,3 +1,5 @@
+//https://github.com/mikeplate/jquery-drag-drop-plugin
+
 (function($) {
 var matchJS=document.createElement("script");
 matchJS.setAttribute("type","text/javascript");
