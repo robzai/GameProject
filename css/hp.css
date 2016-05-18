@@ -1,0 +1,44 @@
+
+	/*	button{
+			width: 100px;
+			height: 50px;
+			font-size: 10pt;
+			position: absolute;
+		}   */
+	/*	#minus{
+			top: 110px;
+			left: 0px;
+		}
+		#plus{
+			top: 110px;
+			left: 150px;
+		}
+		#submit{
+			top: 110px;
+			left: 300px;
+		}*/
+        
+        #hp {
+            margin-left: 10px;
+            padding-top: 40px;
+        }
+        
+		.hpBar{
+			width: 2px;
+			height: 20px;
+			background: red;
+			border: .5px solid black;
+			margin-bottom: 1px;
+            margin-left: 1px;
+			float: left;
+           
+		}
+        /*
+		#score{
+			background: yellow;
+			height: 100px;
+			width: 200px;
+			float: left;
+			text-align: center;
+			margin: auto;
+		}*/
