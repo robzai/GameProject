@@ -6,7 +6,7 @@ for(var i=0; i<flippers.length; i++) {
 }
 
 while() {
-	numGarbages = numGarbages - 1;
+	numGarbages = numGarbages - 1;*/
 	if(numGarbages == 0) {
 		window.location.href='pass.html';
 	} 
