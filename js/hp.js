@@ -1,7 +1,7 @@
 
 var hp = 100;
 var heart = new Array(hp);
-var hpContainer, timer, score;
+var hpContainer, timer, score = 1;
 //var num=100;
 
 /*window.onload=function(){
@@ -54,7 +54,7 @@ function addLife(){
 }
 
 function updateScore(){
-	score = hp * 10;
+	score = hp * 10 + 1;
 	document.getElementById('score').innerHTML = score;
 	reset();
 }
@@ -65,4 +65,8 @@ function reset(){
 		addLife();
     timer = setInterval('run()', 1000);
 	
+}
+
+function sentScore(){
+	return score;
 }
