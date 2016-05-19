@@ -1,13 +1,16 @@
+/*
+var numGarbagesRest;
+var  flippers= document.getElementsByClassName("flipper");
+numGarbagesRest = flippers.length;
 
-var numGarbages = 0;
-var flippers = document.getElementsByClassName("flipper");
-for(var i=0; i<flippers.length; i++) {
-	numGarbages = numGarbages + 1;
+function dropGarbage(){
+	numGarbagesRest--;
 }
 
-while() {
-	numGarbages = numGarbages - 1;*/
-	if(numGarbages == 0) {
-		window.location.href='pass.html';
-	} 
+function checkSuccess(){
+	return numGarbagesRest == 0; 
 }
+*/
+
+/*----------------NOT DONE YET! ---------------*/
+/*----------------FUNCTION FOR NAVIGATING TO PASS PAGE IS IN macth.js---------------*/

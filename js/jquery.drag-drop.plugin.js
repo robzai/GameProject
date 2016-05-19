@@ -1,6 +1,7 @@
 //https://github.com/mikeplate/jquery-drag-drop-plugin
 
 (function($) {
+	
     var importJS=document.createElement("script");
     //import match.js
     importJS.setAttribute("type","text/javascript");
@@ -12,6 +13,8 @@
     importJS.setAttribute("src","./js/hp.js");
     document.body.appendChild(importJS);
 
+
+	
     var defaultOptions = {
         makeClone: false,  // Drag a clone of the source, and not the actual source element
         sourceClass: null, // Class to apply to source element when dragging a clone of the source element
@@ -44,10 +47,16 @@
             }else{
                 minusLife();
             }
-				$src.hide();	
+			$src.hide();
+			
+			dropGarbage();
+			if(checkSuccess()){
+				window.location.href='pass.html';
+			}
         }
     };
 
+	
     // Status during a drag-and-drop operation. Only one such operation can be in progress at any given time.
     var $sourceElement = null; // Element that user wanted to drag
     var $activeElement = null; // Element that is shown moving around during drag operation
