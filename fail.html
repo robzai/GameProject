@@ -1,26 +1,36 @@
-<!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<title>Fail</title>
-		<meta charset="utf-8">
-		
-		<link rel="stylesheet" type="text/css" href="style/freethrow.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/homeNLevel.css"/>
+		<link href="css/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
+
 	<body>
 	<map name="goTo" id="goTo">
 		<!--Image map for 'menu button'. It navigates to the 'Choose level page'-->
-		<area shape="rect" coords="230,515,365,675"
+		<area shape="rect" coords="90,275,137,360"
 			 href="levelpage.html"
 			 alt="menu Button" />
 		<!--Image map for 'replay' button. It restart the game.-->
-		 <area shape="rect" coords="490,520,635,675"
+		 <area shape="rect" coords="186,277,241,360"
 		 href="gamepage.html"
 		 alt="replay Button" />
 	</map>
-	<div>
-		<!--Image for fail page-->
-		<img src="pic/failPage.png" class="alignFrame" usemap="#goTo" alt="fail screen"/>
-	</div>
-	<script src="js/totalScroe.js"></script>
+	<div class = "container">
+		<div class = "row">
+			<div class="col-xs-4">
+				<div class = "main">
+					<div>
+						<!--Image for fail page-->
+						<img src="pic/failPage.png" class="alignFrame" usemap="#goTo" alt="fail screen"/>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>	
+									
+	<script src="js/totalScore.js"></script>
 	</body>
 </html>

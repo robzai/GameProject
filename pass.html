@@ -1,27 +1,34 @@
-<!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<title>Pass</title>
-		<meta charset="utf-8">
-		
-		<link rel="stylesheet" type="text/css" href="style/freethrow.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/homeNLevel.css"/>
+		<link href="css/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 	<map name="goTo" id="goTo">
 		<!--Image map for 'menu button'. It navigates to the 'Choose level page'-->
-		<area shape="rect" coords="227,522,363,675"
+		<area shape="rect" coords="85,280,135,360"
 			 href="levelpage.html"
 			 alt="menu Button" />
 			 
 		<!--Image map for 'go to next level button'. It navigates to the 'next level game'-->
-		 <area shape="rect" coords="490,520,647,678"
+		 <area shape="rect" coords="187,277,240,360"
 		 href="gamepage.html"
 		 alt="next Game Button" />
 	</map>
-	
-	<div>
-		<!--Image for pass page-->
-		<img src="pic/passPage.png" class="alignFrame" usemap="#goTo" alt="pass screen"/>
-	</div>
+	<div class = "container">
+		<div class = "row">
+			<div class="col-xs-4">
+				<div class = "main">
+					<div>
+						<!--Image for pass page-->
+						<img src="pic/passPage.png" class="alignFrame" usemap="#goTo" alt="pass screen"/>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>	
 	</body>
 </html>
