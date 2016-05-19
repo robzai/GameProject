@@ -1,10 +1,16 @@
 //https://github.com/mikeplate/jquery-drag-drop-plugin
 
 (function($) {
-var matchJS=document.createElement("script");
-matchJS.setAttribute("type","text/javascript");
-matchJS.setAttribute("src","./js/match.js");
-document.body.appendChild(matchJS);
+    var importJS=document.createElement("script");
+    //import match.js
+    importJS.setAttribute("type","text/javascript");
+    importJS.setAttribute("src","./js/match.js");
+    document.body.appendChild(importJS);
+
+    //import hp.js
+    importJS.setAttribute("type","text/javascript");
+    importJS.setAttribute("src","./js/hp.js");
+    document.body.appendChild(importJS);
 
     var defaultOptions = {
         makeClone: false,  // Drag a clone of the source, and not the actual source element
@@ -33,7 +39,11 @@ document.body.appendChild(matchJS);
 			getSrc($src);
 			getCanType($dst);
 			//alert(canType);
-			if (match())
+			if (match()){
+                addLife();
+            }else{
+                minusLife();
+            }
 				$src.hide();	
         }
     };

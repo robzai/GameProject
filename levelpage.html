@@ -1,58 +1,70 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>level page</title>
-		<meta charset="utf-8">
+		<title>Home page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/homeNLevel.css" rel="stylesheet" type="text/css" />
+		<link href="css/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
 		
-		<link rel="stylesheet" type="text/css" href="style/freethrow.css"/>
+		<!--this function manage background music, and one pic each for play & pause status -->
+		
 	</head>
 	<body>
-		<div>
-			<img class="banner" src="images/chooseLevelBanner.png" alt="Free Throw banner">
-		</div>
-		<br/>
+		 
+		<div class = "container">
+			<div class = "row">
+					<div class="col-xs-4">
+						<div class = "main">
 		
-		<map name="levels" id="levels">
-			<!--Image map for 'level 1'. It starts Level 1 game-->
-			<area shape="rect" coords="315,440,535,515"
-				href="gamepage.html"
-				alt="level 1" />
-			<!--Image map for 'level 2'. It starts Level 2 game-->
-			<area shape="rect" coords="93,350,307,417"
-				href="gamepage.html"
-				alt="level 2" />
-			<!--Image map for 'level 3'. It starts Level 3 game-->
-			<area shape="rect" coords="27,229,230,300"
-			href="gamepage.html"
-			alt="level 3" />
-			<!--Image map for 'level 4'. It starts Level 4 game-->
-			<area shape="rect" coords="75,60,280,120"
-			href="gamepage.html"
-			alt="level 4" />
-			<!--Image map for 'level 5'. It starts Level 5 game-->
-			<area shape="rect" coords="200,155,403,210"
-			href="gamepage.html"
-			alt="level 5" />
-			<!--Image map for 'level 6'. It starts Level 6 game-->
-			<area shape="rect" coords="430,155,630,211"
-			href="gamepage.html"
-			alt="level 6" />
-			<!--Image map for 'level 7'. It starts Level 7 game-->
-			<area shape="rect" coords="525,55,720,115"
-			href="gamepage.html"
-			alt="level 7" />
-			<!--Image map for 'level 8'. It starts Level 8 game-->
-			<area shape="rect" coords="608,228,807,283"
-			href="gamepage.html"
-			alt="level 8" />
-			<!--Image map for 'level 9'. It starts Level 9 game-->
-			<area shape="rect" coords="523,350,723,410"
-			href="gamepage.html"
-			alt="level 9" />		 
-		</map>
-		
-		<div>
-			<img class="alignFrame" src="images/levels.png" usemap="#levels" alt="start"></a>
+							<div>
+								<img class="banner" src="pic/chooseLevelBanner.png" alt="Free Throw banner">
+							</div>
+							<br/>
+							
+							<map name="levels" id="levels">
+								<!--Image map for 'level 1'. It starts Level 1 game-->
+								<area shape="rect" coords="315,440,535,515"
+									href="gamepage.html"
+									alt="level 1" />
+								<!--Image map for 'level 2'. It starts Level 2 game-->
+								<area shape="rect" coords="93,350,307,417"
+									href="gamepage.html"
+									alt="level 2" />
+								<!--Image map for 'level 3'. It starts Level 3 game-->
+								<area shape="rect" coords="27,229,230,300"
+								href="gamepage.html"
+								alt="level 3" />
+								<!--Image map for 'level 4'. It starts Level 4 game-->
+								<area shape="rect" coords="75,60,280,120"
+								href="gamepage.html"
+								alt="level 4" />
+								<!--Image map for 'level 5'. It starts Level 5 game-->
+								<area shape="rect" coords="200,155,403,210"
+								href="gamepage.html"
+								alt="level 5" />
+								<!--Image map for 'level 6'. It starts Level 6 game-->
+								<area shape="rect" coords="430,155,630,211"
+								href="gamepage.html"
+								alt="level 6" />
+								<!--Image map for 'level 7'. It starts Level 7 game-->
+								<area shape="rect" coords="525,55,720,115"
+								href="gamepage.html"
+								alt="level 7" />
+								<!--Image map for 'level 8'. It starts Level 8 game-->
+								<area shape="rect" coords="608,228,807,283"
+								href="gamepage.html"
+								alt="level 8" />
+								<!--Image map for 'level 9'. It starts Level 9 game-->
+								<area shape="rect" coords="523,350,723,410"
+								href="gamepage.html"
+								alt="level 9" />		 
+							</map>
+							
+							<div>
+								<img class="alignFrame" src="pic/levels.png" usemap="#levels" alt="start"></a>
+							</div>
+						</div>	
+					</div>
+			</div>
 		</div>
 	
 	</body>
