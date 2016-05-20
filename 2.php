@@ -5,8 +5,6 @@
 		<link rel="stylesheet" type="text/css" href="css/homeNLevel.css"/>
 		<link href="css/fail.css" rel="stylesheet" type="text/css" />
 		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
-		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
 	</head>
 	<body>
 		<div class = "container">
