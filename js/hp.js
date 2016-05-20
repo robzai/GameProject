@@ -29,7 +29,7 @@ function run(){
   	clearInterval(timer);
     timer = null;
 	updateScore();
-    window.location.href='2.php';
+    window.location.href='fail.php';
   }
 }
 
@@ -41,7 +41,7 @@ function minusLife(){
             hpContainer.removeChild(heart[--hp]);
         }else{
 			updateScore();
-            window.location.href='2.php';
+            window.location.href='fail.php';
         }  
     }	
 }
