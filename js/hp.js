@@ -39,11 +39,8 @@ function minusLife(){
             hpContainer.removeChild(heart[--hp]);
         }else{
             window.location.href='fail.html';
-        }
-            
-    }
-    
-			
+        }  
+    }	
 }
 function addLife(){
     for(i=0; i<10; i++){

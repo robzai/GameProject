@@ -1,5 +1,7 @@
 <html>
-	<head><meta charset="utf-8"></head>
+	<head><meta charset="utf-8">
+	<script src="js/totalScore.js"></script>
+	</head>
 	<body>
 		<form action="db.php" method="post">
 
@@ -10,7 +12,7 @@
 				</tr>
 				<tr>
 					<td>Enter your score</td>
-					<td><input name="mark" /></td>
+					<td><?php $score = getTotal();?></td>
 				</tr>
 				<tr>
 					<td><input type="submit" /></td>

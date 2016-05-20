@@ -8,7 +8,12 @@ var score;
 //alert(totalScore); 
 window.onload=function(){
 	score = sentScore();
-	//alert(score);
     totalScore = totalScore + score;
-    alert(totalScore); 	
+    //alert(totalScore); 
+	document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;	
 }
+
+function getTotal(){
+	return totalScore;
+}
+
