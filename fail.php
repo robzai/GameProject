@@ -1,3 +1,4 @@
+
 <html lang="en">
 	<head>
 		<title>Fail</title>
@@ -12,13 +13,18 @@
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
 					<div class = "main">
-						<div class = "score">
-							<div id="scoreDisplay"></div>
-								<form action="db.php" method="post">
-									Enter your name:<br>
-									<input  style="width:100px" name="username" /><br>
-									<input type="submit" />
-								</form>
+						<div>
+
+							<div class = "score">
+								     <div id="scoreDisplay"></div>   
+									<form action="db.php" method="post">
+										Enter your name:<br>
+										<input  style="width:100px" name="username" /><br>
+										<input type="submit" />
+									</form>
+							</div>
+
+							
 						</div>
 					</div>	
 				</div>

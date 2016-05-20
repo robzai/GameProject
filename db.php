@@ -23,7 +23,7 @@
 								$db = $client->selectDB("game_project_db")->grades;
 								$document = array( 
 									"player" => $_POST["username"], 
-									"score" => "<script>if(totalScore!=null)document.write(totalScore);</script>"
+									"score" => (int)$_GET["a"]
 								);
 								$db->insert($document);
 								// -1 is DESC; 1 is asc

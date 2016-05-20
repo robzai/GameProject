@@ -6,10 +6,9 @@
 
 .score {
 	height: 80px;
-	width: 200px;
-	margin-left: 15%;
-	margin-top: 55%;
-	position:absolute;
+	width: 300px;
+	padding-left: 5%;
+	padding-top: 70%;
 	font-size:15px;
 	text-align: center;
 	font-weight: 800;

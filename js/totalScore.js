@@ -10,7 +10,7 @@ window.onload=function(){
 	score = sentScore();
     totalScore = totalScore + score;
     //alert(totalScore); 
-	document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;	
+	document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;
 }
 
 function getTotal(){
