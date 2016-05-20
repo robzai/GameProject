@@ -25,7 +25,8 @@ function match(){
 
 /*------ Below the script is for navigating to pass page when a player finishes the game successfully------------*/
 
-var garbageNotDraggedYet = 0;
+/*var garbageNotDraggedYet = 0;
+var playedEasterGame = 0;
 var numDraggable= document.getElementsByClassName("draggableTrash");
 garbageNotDraggedYet = numDraggable.length;
 
@@ -35,5 +36,7 @@ function dropGarbage(){
 
 function checkSuccess(){
 	return garbageNotDraggedYet == 0; 
-}
+}*/
+
+
 

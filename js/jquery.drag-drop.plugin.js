@@ -2,17 +2,25 @@
 
 (function($) {
 	
-    var importJS=document.createElement("script");
+	var importMatch=document.createElement("script");
     //import match.js
-    importJS.setAttribute("type","text/javascript");
-    importJS.setAttribute("src","./js/match.js");
-    document.body.appendChild(importJS);
+    importMatch.setAttribute("type","text/javascript");
+    importMatch.setAttribute("src","./js/match.js");
+    document.body.appendChild(importMatch);
 
     //import hp.js
-    importJS.setAttribute("type","text/javascript");
-    importJS.setAttribute("src","./js/hp.js");
-    document.body.appendChild(importJS);
-
+	var importHP=document.createElement("script");
+    importHP.setAttribute("type","text/javascript");
+    importHP.setAttribute("src","./js/hp.js");
+    document.body.appendChild(importHP);
+	
+	//import passGame.js
+	var importPass=document.createElement("script");
+	importPass.setAttribute("type","text/javascript");
+    importPass.setAttribute("src","./js/passGame.js");
+    document.body.appendChild(importPass);
+	
+	
 
 	
     var defaultOptions = {
