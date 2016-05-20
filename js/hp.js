@@ -1,5 +1,5 @@
 
-var hp = 1;
+var hp = 100;
 var heart = new Array(hp);
 var hpContainer, timer, score=999;
 var scoreSend;
@@ -55,19 +55,20 @@ function updateScore(){
 	score = hp * 10 + 1;
 	//document.getElementById('score').innerHTML = score;
 	//scoreSend = score;
-	//reset();
+	reset();
     alert("inUpdate" + score);
+    localStorage.levelScore = parseInt(score);
 }
 
 function reset(){
   	clearInterval(timer);
 	while(hp < 100)
 		addLife();
-    timer = setInterval('run()', 100);
+    timer = setInterval('run()', 1000);
 	
 }
 
-function sendScore(){
-	alert("inSendScore" + score);
-	return score;
-}
+//function sendScore(){
+//	alert("inSendScore" + score);
+//	return score;
+//}

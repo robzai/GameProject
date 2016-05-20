@@ -58,7 +58,7 @@
 			if(1){
 			//if(checkSuccess() && checkEasterGamePlayed()){
                 updateScore();
-				window.location.href='success.html';
+				window.location.href='pass.html';
 			}
         }
     };

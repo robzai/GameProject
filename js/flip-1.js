@@ -8,8 +8,8 @@ var importJS=document.createElement("script");
     document.body.appendChild(importJS);
 
 window.onload = function(){
-	//localStorage.levelScore = parseInt(0);
-	//localStorage.totalScore = parseInt(0);
+	localStorage.levelScore = parseInt(0);
+	localStorage.totalScore = parseInt(0);
 	setTimeout(function(){
         var flippers = document.getElementsByClassName("flipper");
         //confirm(flippers.length);
