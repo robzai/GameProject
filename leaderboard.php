@@ -54,7 +54,6 @@
 								echo "</table>";
 					?>
 					</div>
-
 				</div>	
 				<div class="col-xs-4 visible-md visible-lg"></div>
 			</div>

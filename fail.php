@@ -13,14 +13,14 @@
 				<div class="col-xs-4">
 					<div class = "main">
 						<div class = "score">
-								<div id = "scoreDisplay"></div>
-								<!-- this is the info that will pass to leaderboard-->
-								<form action="leaderboard.php" method="post">
-									<input type="hidden" name="ttscore" id="ttscore"/>
-									Enter your name:<br>
-									<input  style="width:100px" name="username" /><br>
-									<input type="submit" />
-								</form>
+							<div id = "scoreDisplay"></div>
+							<!-- this is the info that will pass to leaderboard-->
+							<form action="leaderboard.php" method="post">
+								<input type="hidden" name="ttscore" id="ttscore"/>
+                                    Enter your name:<br>
+								<input  style="width:100px" name="username" /><br>
+								<input type="submit" />
+							</form>
 						</div>
 					</div>	
 				</div>
