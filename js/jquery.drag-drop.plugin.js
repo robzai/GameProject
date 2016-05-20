@@ -54,7 +54,9 @@
             }
 			$src.hide();
 			
+			//number of garbages decreases
 			dropGarbage();
+			//Navigate to pass page when no garbage left and easter game played.
 			if(checkSuccess() && checkEasterGamePlayed()){
 				window.location.href='pass.html';
 			}
