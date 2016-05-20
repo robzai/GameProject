@@ -1,5 +1,6 @@
 
 var playedEasterGame = 0;
+
 /*Return playedEasterGame. playedEasterGame is 1 when the easter game is played, else 0*/
 function getBooleanValueForEaster(){
 	return playedEasterGame;
@@ -52,7 +53,10 @@ var newgame = {
 	/*if sth's id is fnquit and it is clicked, goanna excute the hide method in "newgame"*/
 	g("fnquit").onclick = function(){
 		newgame.hide();
+		//change the value of the playedEasterGame when the easter game played successfully
 		playedEasterGame = 1;
+		
+		//Navigate to pass page when no garbage left and easter game played.
 		if(checkSuccess() && checkEasterGamePlayed()){
 				window.location.href='pass.html';
 		}

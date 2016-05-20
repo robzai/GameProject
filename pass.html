@@ -1,12 +1,13 @@
-
 <html lang="en">
 	<head>
 		<title>Pass</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/homeNLevel.css"/>
-		<link href="css/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/pass.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
+<<<<<<< HEAD
 	<map name="goTo" id="goTo">
 		<!--Image map for 'menu button'. It navigates to the 'Choose level page'-->
 		<area shape="rect" coords="85,280,135,360"
@@ -27,8 +28,31 @@
 						<img src="pic/passPage.png" class="alignFrame" usemap="#goTo" alt="pass screen"/>
 					</div>
 				</div>	
+=======
+		<div class = "container">
+			<div class = "row">
+				<div class="col-xs-4 visible-md visible-lg"></div>
+				<div class="col-xs-4">
+					<div class = "main">
+						<div>
+							<div class = "score">
+								<div id="scoreDisplay"></div>
+									<form action="db.php" method="post">
+										Enter your name:<br>
+										<input name="username" /><br>
+										<input type="submit" />
+									</form>
+							</div>
+
+							
+						</div>
+					</div>	
+				</div>
+				<div class="col-xs-4 visible-md visible-lg"></div>
+>>>>>>> 1f4c9d1b12227b3b89f65014d822ad8201846cb7
 			</div>
-		</div>
-	</div>	
+		</div>	
+								
+		<script src="js/totalScore.js"></script>
 	</body>
 </html>
