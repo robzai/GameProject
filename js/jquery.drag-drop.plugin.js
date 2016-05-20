@@ -56,7 +56,7 @@
 			
 			dropGarbage();
 			//if(1){
-			if(checkSuccess() && checkEasterGamePlayed()){
+			if(checkSuccess()){
                 updateScore();
 				window.location.href='success.html';
 			}
