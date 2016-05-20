@@ -7,10 +7,16 @@ var totalScore = 0;
 var score;
 //alert(totalScore); 
 window.onload=function(){
-	score = sentScore();
+	//score = sendScore();
+	//score = 666;
+    alert("inWindowOnLoad" + sendScore());
+	/*
     totalScore = totalScore + score;
     //alert(totalScore); 
-	document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;
+	//document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;
+	document.getElementById('sentScore').setAttribute("data", totalScore);
+	var temp = document.getElementById('sentScore').getAttribute("data");
+	alert("indivData" + temp);*/
 }
 
 function getTotal(){
