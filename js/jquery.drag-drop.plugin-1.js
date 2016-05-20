@@ -1,20 +1,29 @@
-//https://github.com/mikeplate/jquery-drag-drop-plugin
-
+/*
+    this plug-in is especially for level one.
+    we found this drag and drop plug-in for touch screen on line and made reference to it
+    https://github.com/mikeplate/jquery-drag-drop-plugin
+*/
 (function($) {
 	
 	var importMatch=document.createElement("script");
-    //import match.js
+    /*
+        import match.js
+    */
     importMatch.setAttribute("type","text/javascript");
     importMatch.setAttribute("src","./js/match.js");
     document.body.appendChild(importMatch);
 
-    //import hp.js
+    /*
+        import hp.js
+    */
 	var importHP=document.createElement("script");
     importHP.setAttribute("type","text/javascript");
     importHP.setAttribute("src","./js/hp.js");
     document.body.appendChild(importHP);
 	
-	//import passGame.js
+	/*
+        import passGame.js
+    */
 	var importPass=document.createElement("script");
 	importPass.setAttribute("type","text/javascript");
     importPass.setAttribute("src","./js/passGame.js");
@@ -30,20 +39,29 @@
         isActive: true,
         container: null, // if set, dragging is limited to this container
 
-        // Default is to allow all elements to be dragged
+        /*
+            Default is to allow all elements to be dragged
+        */
         canDrag: function($src, event) {
             return $src;
         },
 
-        // Default is to allow dropping inside elements with css stylesheet "drop"
+        /*
+            Default is to allow dropping inside elements with css stylesheet "drop"
+        */
         canDrop: function($dst) {
             return $dst.hasClass("drop") || $dst.parents(".drop").size()>0;
         },
 
- //drop   // Default is to move the element in the DOM and insert it into the element where it is dropped
+        /*
+            hide the garbage when it is dragged 
+            and check whether it is matched correctly
+        */
         didDrop: function($src, $dst) {
-            //$src.appendTo($dst);
-			//function in match.js
+            //$src.appendTo($dst);      //Default is to move
+                                        //the element in the DOM               
+                                        //and insert it into the element where it is dropped
+                                        //function in match.js
 			getSrc($src);
 			getCanType($dst);
 			//alert(canType);
@@ -73,7 +91,9 @@
 	
 
 
-    // Private helper methods
+    /*
+        Private helper methods
+    */
     function cancelDestElement(options) {
         if ($destElement!=null) {
             if (options.dropClass)
@@ -86,9 +106,10 @@
             }
         }
     }
-
-    // Public methods
-
+    
+    /*
+        Public methods
+    */
     var methods = {
         init: function(options) {
             options = $.extend({}, defaultOptions, options);
@@ -108,7 +129,10 @@
         off: function() {
             this.data("options").isActive = false;
         },
-//onStart
+        
+    /*
+        onStart
+    */
         onStart: function(event) {
             var $me = $(this);
             var options = $me.data("options");
@@ -187,7 +211,9 @@
                 return false;
             }
         },
-//onMove
+        /*
+            onMove
+        */
         onMove: function(event) {
             if (!$activeElement)
                 return;
@@ -244,7 +270,10 @@
             event.stopPropagation();
             return false;
         },
-//onEnd
+        
+        /*
+            onEnd
+        */
         onEnd: function(event) {
             if (!$activeElement)
                 return;

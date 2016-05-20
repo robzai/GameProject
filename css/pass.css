@@ -1,9 +1,11 @@
+/*Background for pass page and the size*/
 .main {
 	background-image: url(pic/passbg.png);
 	width: 320;
 	height: 480;
 }
 
+/*Text box for name php */
 .score {
 	height: 80px;
 	width: 300px;

@@ -1,12 +1,15 @@
 /*
-	when wind is loaded flip puzzles after 3 seconds
+    this js file is for level one
+    import hp.js
 */
 var importJS=document.createElement("script");
-    //import hp.js
     importJS.setAttribute("type","text/javascript");
     importJS.setAttribute("src","./js/hp.js");
     document.body.appendChild(importJS);
-
+/*
+	when wind is loaded flip puzzles after several seconds 
+    reset next scores to zero
+*/
 window.onload = function(){
 	localStorage.levelScore = parseInt(0);
 	localStorage.totalScore = parseInt(0);
