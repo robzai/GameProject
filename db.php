@@ -5,6 +5,7 @@
 		<link href="css/leaderboard.css" rel="stylesheet" type="text/css" />
 		<link href="css/tutorial.css" rel="stylesheet" type="text/css">
 		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
+		<script src="js/totalScore.js"></script>
 	</head>
 	<body>
 		<div class = "container">
@@ -12,6 +13,9 @@
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
 					<div class ="main">
+						<div class = "rank">
+							<img src = "pic/rank.png">
+						</div>
 						<div class = "scoretable">
 							<?php
 								$uri = "mongodb://rebecca:111111@ds036069.mlab.com:36069/game_project_db";
@@ -19,7 +23,7 @@
 								$db = $client->selectDB("game_project_db")->grades;
 								$document = array( 
 									"player" => $_POST["username"], 
-									"score" => (int)$_POST['mark']
+									"score" => "<script>if(totalScore!=null)document.write(totalScore);</script>"
 								);
 								$db->insert($document);
 								// -1 is DESC; 1 is asc
@@ -27,7 +31,7 @@
 								// how many results you whant to show
 								$top = $db->find(array(), array('_id' => false))->sort($sort)->limit(5);
 								
-								echo "<table><tr><td></td><td>Name</td><td>Score</td></tr>";
+								echo "<table><tr><td></td><td class='title'>Name</td><td class='title'>Score</td></tr>";
 								// output data of each row
 								$i = 0;
 								foreach ($top as $doc){

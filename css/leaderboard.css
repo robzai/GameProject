@@ -15,6 +15,10 @@ table tr {
 	height:30px;
 }
 
+table tr .title {
+	font-weight: 800;
+}
+
 table tr .first {
 	color:f4ea26;
 	font-size: 20px;
@@ -59,10 +63,17 @@ table tr td:first-child{
 	width: 320px;
 	height: 480px;
 }
+.rank {
+	width: 330px;
+	height:100px;
+	padding-top: 25%;
+	margin-left: 5%;
+
+}
 
 .scoretable {
 	width: 280px;
 	height: 300px;
-	padding-top: 160px;
+	padding-top: 25%;
 	margin-left: 8%;
 }
