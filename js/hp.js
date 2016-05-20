@@ -28,6 +28,7 @@ function run(){
   else{
   	clearInterval(timer);
     timer = null;
+	updateScore();
     window.location.href='2.php';
   }
 }
@@ -39,6 +40,7 @@ function minusLife(){
         if(hp>0){
             hpContainer.removeChild(heart[--hp]);
         }else{
+			updateScore();
             window.location.href='2.php';
         }  
     }	

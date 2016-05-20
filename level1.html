@@ -28,7 +28,7 @@
 					<div class = "bin">
 						<!-- glass bin -->
 						<div style = "float: left">
-				<img data-type = "glass" id="glassCan" class="can" draggable="false" src="pic/glassCan.png" ondragover="allowDrop(event)" ondrop="drop(event)" 
+				<img data-type = "paper" id="glassCan" class="can" draggable="false" src="pic/paper.png" ondragover="allowDrop(event)" ondrop="drop(event)" 
 							height = "75" width ="80">
 			</div>
 <!-- mixed bin -->			
@@ -73,7 +73,7 @@
 						<!-- picture on the back can be druged -->
 						<div class="back">
 							<!-- back side of the garbage, dragable -->
-							<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+							<img data-type = "paper" id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
 						</div>
 					</div> 
 				</div>
@@ -86,12 +86,12 @@
 					<div class="flipper">
 						<div class="front">
 							<!-- garbage players need to memorize -->
-							<img draggable="false" src="pic/cake.png" height ="65" width="65">
+							<img draggable="false" src="pic/milk.png" height ="65" width="65">
 						</div>
 						<!-- picture on the back can be druged -->
 						<div class="back">
 							<!-- back side of the garbage, dragable -->
-							<img id ="back2" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+							<img data-type = "mixed" id ="back2" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
 						</div>
 					</div> 
 				</div>
