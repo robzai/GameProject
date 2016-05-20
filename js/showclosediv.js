@@ -1,3 +1,9 @@
+
+var playedEasterGame = 0;
+/*Return playedEasterGame. playedEasterGame is 1 when the easter game is played, else 0*/
+function getBooleanValueForEaster(){
+	return playedEasterGame;
+}
 /*g is an object. it goanna change based on different id*/
 function g(obj) {
 	return document.getElementById(obj);
@@ -46,6 +52,7 @@ var newgame = {
 				/*if sth's id is fnquit and it is clicked, goanna excute the hide method in "newgame"*/
 				g("fnquit").onclick = function(){
 					newgame.hide();
+					playedEasterGame = 1;
 				};
 				
 				/*if sth's id is set and it is clicked, goanna excute the showset method in "set"*/				
@@ -61,3 +68,6 @@ var newgame = {
 				g("closese").onclick = function() {
 					set.closemusic();
 				};
+				
+			
+				
