@@ -14,8 +14,7 @@ window.onload=function(){
 	
     totalScore = totalScore + score;
 
-	document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;
-	document.getElementById("ttscore").value = totalScore;
+
 	/*$.ajax({
 		type: "POST",
 		url: '../2.php',
@@ -29,10 +28,11 @@ window.onload=function(){
      
     //alert(totalScore); 
 	//document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;
->>>>>>> 701acb21c1d7cf97866f6cc3a97f3a298f9be436
 	//document.getElementById('sentScore').setAttribute("data", totalScore);
 	//var temp = document.getElementById('sentScore').getAttribute("data");
 	//alert("indivData" + temp);
+	document.getElementById('scoreDisplay').innerHTML = 'score:'+ localStorage.totalScore;
+	document.getElementById("ttscore").value = localStorage.totalScore;
 }
 
 function getTotal(){
