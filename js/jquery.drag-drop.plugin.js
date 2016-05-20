@@ -20,9 +20,6 @@
     importPass.setAttribute("src","./js/passGame.js");
     document.body.appendChild(importPass);
 	
-	
-
-	
     var defaultOptions = {
         makeClone: false,  // Drag a clone of the source, and not the actual source element
         sourceClass: null, // Class to apply to source element when dragging a clone of the source element
@@ -58,7 +55,7 @@
 			$src.hide();
 			
 			dropGarbage();
-			if(checkSuccess()){
+			if(checkSuccess() && checkEasterGamePlayed()){
 				window.location.href='pass.html';
 			}
         }
