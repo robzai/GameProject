@@ -55,8 +55,9 @@ function updateScore(){
 	score = hp * 10 + 1;
 	//document.getElementById('score').innerHTML = score;
 	//scoreSend = score;
-	//reset();
+	reset();
     alert("inUpdate" + score);
+    localStorage.levelScore = parseInt(score);
 }
 
 function reset(){
@@ -67,7 +68,7 @@ function reset(){
 	
 }
 
-function sendScore(){
-	alert("inSendScore" + score);
-	return score;
-}
+//function sendScore(){
+//	alert("inSendScore" + score);
+//	return score;
+//}
