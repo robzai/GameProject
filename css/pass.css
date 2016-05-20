@@ -1,0 +1,17 @@
+.main {
+	background-image: url(pic/passbg.png);
+	width: 320;
+	height: 480;
+}
+
+.score {
+	height: 80px;
+	width: 200px;
+	margin-left: 15%;
+	margin-top: 55%;
+	position:absolute;
+	font-size:15px;
+	text-align: center;
+	font-weight: 800;
+	color: #000;
+}
