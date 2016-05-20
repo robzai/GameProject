@@ -58,8 +58,8 @@ function updateScore(){
 	//document.getElementById('score').innerHTML = score;
 	//scoreSend = score;
 	reset();
-    //alert("inUpdate" + score);
     localStorage.levelScore = parseInt(score);
+	//alert("inUpdate" + localStorage.levelScore);
 }
 
 function reset(){
