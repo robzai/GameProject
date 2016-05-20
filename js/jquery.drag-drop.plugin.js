@@ -131,6 +131,7 @@
         off: function() {
             this.data("options").isActive = false;
         },
+        
     /*
         onStart
     */

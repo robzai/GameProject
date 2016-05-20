@@ -22,80 +22,79 @@
 								<span id="m"></span><span class="bd">:</span><span id="s"></span>
 							</div>
 						</div>
-	   <div id="hp"></div>
-        
-		<!-- bin div ganna contain all different trashes here, and garbage pics can be dragged into these trashes -->
-					<div class = "bin">
-						<!-- glass bin -->
-						<div style = "float: left">
-				<img data-type = "paper" id="glassCan" class="can" draggable="false" src="pic/paper.png" ondragover="allowDrop(event)" ondrop="drop(event)" 
+						<div id="hp"></div>
+						<!-- bin div ganna contain all different trashes here, and garbage pics can be dragged into these trashes -->
+						<div class = "bin">
+							<!-- paper bin -->
+							<div style = "float: left">
+								<img data-type = "paper" id="glassCan" class="can" draggable="false" src="pic/paper.png" ondragover="allowDrop(event)" ondrop="drop(event)" 
 							height = "75" width ="80">
-			</div>
-<!-- mixed bin -->			
-			<div style = "float: left">
-				<img data-type = "mixed" id="mixedCan" class="can" draggable="false" src="pic/mixed.png" ondragover="allowDrop(event)" 
-				ondrop="drop(event)" height = "75" width ="80">
-			</div>
-		</div>
+							</div>
+							<!-- mixed bin -->			
+							<div style = "float: left">
+								<img data-type = "mixed" id="mixedCan" class="can" draggable="false" src="pic/mixed.png" ondragover="allowDrop(event)" 
+								ondrop="drop(event)" height = "75" width ="80">
+							</div>
+						</div>
 		
-		<!-- main game part, players need to memorize all garbage pics below -->
-		<div class = "game">
-		<div id="canTouch">
-			<div class = "garbage"></div>
-			<div class = "garbage"></div>
-			<div class = "garbage"></div>
-			<div class = "garbage"></div>
-			<div class = "garbage"></div>
-<!-- garbage 0-->
-			<div class = "garbage">
-				<div class="flip-container">
-					<div class="flipper">
-						<div class="front">
-							<!-- garbage players need to memorize -->
-							<img draggable="false" src="pic/milk.png" height ="65" width="65">
-						</div>
-						<!-- picture on the back can be druged -->
-						<div class="back">
-							<!-- back side of the garbage, dragable -->
-							<img data-type = "mixed" id ="back0" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
-						</div>
-					</div> 
-				</div>
-			</div>
-<!-- garbage 1-->			
-			<div class = "garbage">			
-				<div class="flip-container">
-					<div class="flipper">
-						<div class="front">
-							<!-- garbage players need to memorize -->
-							<img draggable="false" src="pic/news.png" height ="65" width="65">
-						</div>
-						<!-- picture on the back can be druged -->
-						<div class="back">
-							<!-- back side of the garbage, dragable -->
-							<img data-type = "paper" id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
-						</div>
-					</div> 
-				</div>
-			</div>
-			<div class = "garbage"></div>
-			<div class = "garbage"></div>
-<!-- garbage 2-->			
-			<div class = "garbage">
-				<div class="flip-container">
-					<div class="flipper">
-						<div class="front">
-							<!-- garbage players need to memorize -->
-							<img draggable="false" src="pic/milk.png" height ="65" width="65">
-						</div>
-						<!-- picture on the back can be druged -->
-						<div class="back">
-							<!-- back side of the garbage, dragable -->
-							<img data-type = "mixed" id ="back2" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
-						</div>
-					</div> 
-				</div>
-			</div>
+						<!-- main game part, players need to memorize all garbage pics below -->
+						<div class = "game">
+							<div id="canTouch">
+								<div class = "garbage"></div>
+								<div class = "garbage"></div>
+								<div class = "garbage"></div>
+								<div class = "garbage"></div>
+								<div class = "garbage"></div>
+								<!-- garbage 1-->
+								<div class = "garbage">
+									<div class="flip-container">
+										<div class="flipper">
+										<div class="front">
+											<!-- garbage players need to memorize -->
+											<img draggable="false" src="pic/milk.png" height ="65" width="65">
+										</div>
+										<!-- picture on the back can be druged -->
+										<div class="back">
+										<!-- back side of the garbage, dragable -->
+											<img data-type = "mixed" id ="back0" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+										</div>
+									</div> 
+								</div>
+							</div>
+							<!-- garbage 2-->			
+							<div class = "garbage">			
+								<div class="flip-container">
+									<div class="flipper">
+										<div class="front">
+											<!-- garbage players need to memorize -->
+											<img draggable="false" src="pic/news.png" height ="65" width="65">
+										</div>
+										<!-- picture on the back can be druged -->
+										<div class="back">
+											<!-- back side of the garbage, dragable -->
+											<img data-type = "paper" id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+										</div>
+									</div> 
+								</div>
+							</div>
+							<div class = "garbage"></div>
+							<div class = "garbage"></div>
+							<!-- garbage 3-->			
+							<div class = "garbage">
+								<div class="flip-container">
+									<div class="flipper">
+										<div class="front">
+											<!-- garbage players need to memorize -->
+											<img draggable="false" src="pic/milk.png" height ="65" width="65">
+										</div>
+										<!-- picture on the back can be druged -->
+										<div class="back">
+											<!-- back side of the garbage, dragable -->
+											<img data-type = "mixed" id ="back2" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+										</div>
+									</div> 
+								</div>
+							</div>
 			</div>    <!-- end of canTouch-->	
 			<!-- garbage 3-->			
 			<div class = "garbage">
