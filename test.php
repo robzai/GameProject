@@ -1,7 +1,7 @@
 <html>
 	<head><meta charset="utf-8"></head>
 	<body>
-		<form action="leader.php" method="post">
+		<form action="db.php" method="post">
 
 			<table>
 				<tr>
