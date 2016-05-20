@@ -9,9 +9,9 @@ var score;
 //alert(totalScore); 
 window.onload=function(){
 	//score = sendScore();
-	score = 666;
+	//score = 666;
     //alert("inWindowOnLoad" + sendScore());
-    totalScore = totalScore + score;
+    //totalScore = totalScore + score;
 	/*$.ajax({
 		type: "POST",
 		url: '../2.php',
@@ -28,8 +28,8 @@ window.onload=function(){
 	//document.getElementById('sentScore').setAttribute("data", totalScore);
 	//var temp = document.getElementById('sentScore').getAttribute("data");
 	//alert("indivData" + temp);
-	//document.getElementById('scoreDisplay').innerHTML = 'score:'+ localStorage.totalScore;
-	//document.getElementById("ttscore").value = localStorage.totalScore;
+	document.getElementById('scoreDisplay').innerHTML = 'score:'+ localStorage.totalScore;
+	document.getElementById("ttscore").value = localStorage.totalScore;
 }
 
 function getTotal(){
