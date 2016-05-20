@@ -4,8 +4,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/leaderboard.css" rel="stylesheet" type="text/css" />
 		<link href="css/tutorial.css" rel="stylesheet" type="text/css">
+		
 		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
-		<script src="js/totalScore.js"></script>
+
 	</head>
 	<body>
 		<div class = "container">
@@ -21,9 +22,10 @@
 								$uri = "mongodb://rebecca:111111@ds036069.mlab.com:36069/game_project_db";
 								$client = new MongoClient($uri);
 								$db = $client->selectDB("game_project_db")->grades;
+			
 								$document = array( 
 									"player" => $_POST["username"], 
-									"score" => (int)$_GET["a"]
+									"score" => (int)$_POST["ttscore"]
 								);
 								$db->insert($document);
 								// -1 is DESC; 1 is asc
@@ -52,6 +54,7 @@
 								echo "</table>";
 					?>
 					</div>
+
 				</div>	
 				<div class="col-xs-4 visible-md visible-lg"></div>
 			</div>

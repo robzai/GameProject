@@ -15,8 +15,9 @@
 				<div class="col-xs-4">
 					<div class = "main">
 						<div class = "score">
-							<div id="scoreDisplay"></div>
+								<div id = "scoreDisplay"></div>
 								<form action="db.php" method="post">
+									<input type="hidden" name="ttscore" id="ttscore"/>
 									Enter your name:<br>
 									<input  style="width:100px" name="username" /><br>
 									<input type="submit" />

@@ -1,5 +1,5 @@
 
-var hp = 100;
+var hp = 1;
 var heart = new Array(hp);
 var hpContainer, timer, score=999;
 var scoreSend;
@@ -28,7 +28,7 @@ function run(){
   else{
   	clearInterval(timer);
     timer = null;
-    window.location.href='fail.html';
+    window.location.href='2.php';
   }
 }
 
@@ -39,7 +39,7 @@ function minusLife(){
         if(hp>0){
             hpContainer.removeChild(heart[--hp]);
         }else{
-            window.location.href='fail.html';
+            window.location.href='2.php';
         }  
     }	
 }
@@ -63,7 +63,7 @@ function reset(){
   	clearInterval(timer);
 	while(hp < 100)
 		addLife();
-    timer = setInterval('run()', 1000);
+    timer = setInterval('run()', 100);
 	
 }
 
