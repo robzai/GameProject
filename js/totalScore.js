@@ -19,9 +19,9 @@ window.onload=function(){
 	);*/
     //alert(totalScore); 
 	//score = 666;
-    alert("inWindowOnLoad" + localStorage.levelScore);
+    //alert("inWindowOnLoad" + localStorage.levelScore);
     localStorage.totalScore = parseInt(localStorage.totalScore) + parseInt(localStorage.levelScore);
-	alert("total score: "+localStorage.totalScore);
+	//alert("total score: "+localStorage.totalScore);
      
     //alert(totalScore); 
 	//document.getElementById('scoreDisplay').innerHTML = 'score:'+totalScore;

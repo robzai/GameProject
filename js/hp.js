@@ -56,7 +56,7 @@ function updateScore(){
 	//document.getElementById('score').innerHTML = score;
 	//scoreSend = score;
 	reset();
-    alert("inUpdate" + score);
+    //alert("inUpdate" + score);
     localStorage.levelScore = parseInt(score);
 }
 

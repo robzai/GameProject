@@ -55,8 +55,8 @@
 			$src.hide();
 			
 			dropGarbage();
-			if(1){
-			//if(checkSuccess() && checkEasterGamePlayed()){
+			//if(1){
+			if(checkSuccess() && checkEasterGamePlayed()){
                 updateScore();
 				window.location.href='pass.html';
 			}
