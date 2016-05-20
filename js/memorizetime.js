@@ -1,8 +1,12 @@
+
 var m = 00;
 var s = 10;
+/*
+    display remaining time for memorizing garbages
+*/
 function showtime(){
 	document.getElementById('m').innerHTML = m;
-	document.getElementById('s').innerHTML = s;
+	document.t('s').inerHTML = s;
 	s = s-1;
 	if (m!=0) {
 		if(s == 0) {
@@ -16,7 +20,10 @@ function showtime(){
 		time.style.visibility = 'hidden';
 	}
 }
+/*
+    set the interval for the counting down time display
+*/
 clearInterval(settime); 
-var settime = setInterval(function(){
-	showtime();
-},1000);
+    var settime = setInterval(function(){
+        showtime();
+    },1000);
