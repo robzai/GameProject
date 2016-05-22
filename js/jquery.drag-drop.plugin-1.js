@@ -29,6 +29,14 @@
     importPass.setAttribute("src","./js/passGame.js");
     document.body.appendChild(importPass);
 	
+	/*
+        import showclosediv.js
+    */
+	var importShowclosediv=document.createElement("script");
+	importShowclosediv.setAttribute("type","text/javascript");
+    importShowclosediv.setAttribute("src","./js/showclosediv.js");
+    document.body.appendChild(importShowclosediv);
+	
     var defaultOptions = {
         makeClone: false,  // Drag a clone of the source, and not the actual source element
         sourceClass: null, // Class to apply to source element when dragging a clone of the source element
@@ -62,19 +70,27 @@
                                         //the element in the DOM               
                                         //and insert it into the element where it is dropped
                                         //function in match.js
+			// this function is in match.js							
 			getSrc($src);
+			// this function is in match.js
 			getCanType($dst);
-			//alert(canType);
+			// see if the garbage and the bin are match
+			// this function is in match.js
 			if (match()){
                 addLife();
             }else{
                 minusLife();
             }
 			$src.hide();
-			
+			// show the easrter egg game if an easter egg is dropped
+			if(returnGarbageType() == "easter"){
+				newgame.show();
+			}
+			// this function is in passGame.js
 			dropGarbage();
-			//if(1){
+			//if(0){
 			if(checkSuccess() && checkEasterGamePlayed()){
+				alert("in drag-drop plugin,level success, score will be update after this message");
                 updateScore();
 				window.location.href='pass.html';
 			}

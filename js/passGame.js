@@ -6,6 +6,14 @@ var importEasterValue=document.createElement("script");
     importEasterValue.setAttribute("src","./js/showclosediv.js");
     document.body.appendChild(importEasterValue);
 
+/*
+    import match.js
+*/
+var importMatch=document.createElement("script");
+	importMatch.setAttribute("type","text/javascript");
+    importMatch.setAttribute("src","./js/match.js");
+    document.body.appendChild(importMatch);	
+	
 	
 /*
     Get the number of draggable garbages
@@ -15,11 +23,14 @@ var numDraggable= document.getElementsByClassName("draggableTrash");
 garbageNotDraggedYet = numDraggable.length;
 
 /*
-    If the garbage is dropped successfully,
+    Each garbage bag has a garbageType. So if the 
+	garbageType != undefined, it must be a garbage bag.
+	If a garbage bag is dropped successfully,
     the number of garbages left decreases
 */
 function dropGarbage(){
-	garbageNotDraggedYet--;
+	if(returnGarbageType() != undefined)
+		garbageNotDraggedYet--;
 }
 
 /*

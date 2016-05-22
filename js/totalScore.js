@@ -20,6 +20,7 @@ window.onload=function(){
 	//var temp = document.getElementById('sentScore').getAttribute("data");
 	document.getElementById('scoreDisplay').innerHTML = 'score:'+ localStorage.totalScore;
 	document.getElementById("ttscore").value = localStorage.totalScore;
+	alert("updatae total score");
 }
 
 //function getTotal(){

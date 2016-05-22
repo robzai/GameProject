@@ -18,7 +18,7 @@ window.onload = function(){
             flippers[i].style.transform = "rotateY(180deg)";
         }					
     }
-	, 13000);		
+	, 3000);		
     hpContainer = document.getElementById('hp');
 	init();
 	for(var i = 0; i < hp; i++)

@@ -20,7 +20,7 @@ window.onload = function(){
             flippers[i].style.transform = "rotateY(180deg)";
         }					
     }
-	, 10000);		
+	, 2000);		
     hpContainer = document.getElementById('hp');
 	init();
 	for(var i = 0; i < hp; i++)

@@ -64,14 +64,15 @@ var newgame = {
 			g("mask1").style.display = "none";
 		}
 	}
+	
 	/*
         if sth's id is easter and it is clicked, 
         will excute the show method in "newgame"
-    */
+   
 	g("easter").onclick = function(){
 		newgame.show();
 		this.blur();
-	};
+	}; */
 	
 	/*
         if sth's id is fnquit and it is clicked, 
@@ -91,6 +92,7 @@ var newgame = {
             and easter game played.
         */
 		if(checkSuccess() && checkEasterGamePlayed()){
+				updateScore();
 				window.location.href='pass.html';
 		}
 	};

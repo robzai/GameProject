@@ -1,0 +1,2 @@
+1. how to input username in leaderboard on mobile
+2. avoid score increasing when reflash success or fail page 

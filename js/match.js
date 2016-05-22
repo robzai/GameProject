@@ -32,9 +32,13 @@ function getSrc($src){
 function match(){
 	//alert (garbageType +" " +canType);
 	return (garbageType == canType);
-
 }
 
-
+/*
+	return the garbageType
+*/
+function returnGarbageType(){
+	return garbageType;
+}
 
 
