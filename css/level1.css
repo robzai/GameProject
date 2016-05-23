@@ -45,30 +45,15 @@
 	float: left;
 }
 
-.garbage a {
-
-}
-
 .footer {
-	width: 290;
+	width: 320;
 	height: 15;
 }
 
-.buttons {
-	position: absolute;
-	left: 2%;
-	top:10%;
-}
-
 .hints {
-	width: 17;
-	height: 17;
 	float: right;
 }
-
 .setting {
-	width: 17;
-	height: 17;
 	float: left;
 }
 
