@@ -73,10 +73,15 @@ div#mask {
 div#newgame {
 	border: 1px solid #000000;
     position:absolute;
-    top:10%;
-    left:0;
-	width:300px;
-	height: 400px;
+    top:5%;
+	width:312px;
+	height: 430px;
+	font-size: 20px;
+	font-weight:700;
+	color: #000;
+	display:none;
+	text-align:center;
+	background-color: #fff;
 }
 
 
