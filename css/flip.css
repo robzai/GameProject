@@ -1,3 +1,8 @@
+/*
+    we found this css on line and made reference to it
+    https://davidwalsh.name/css-flip
+*/
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -24,6 +29,7 @@
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
