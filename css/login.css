@@ -1,0 +1,15 @@
+.main {
+	background-image: url(pic/bg1.png);
+	width: 320;
+	height: 480;
+	color: #000;
+}
+
+.info {
+	width:320px;
+	height: 200px;
+	padding-top: 130px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+}
