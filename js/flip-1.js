@@ -7,23 +7,35 @@ var importJS=document.createElement("script");
     importJS.setAttribute("src","./js/hp.js");
     document.body.appendChild(importJS);
 /*
+    import level.js
+*/	
+var importLevel=document.createElement("script");
+    importLevel.setAttribute("type","text/javascript");
+    importLevel.setAttribute("src","./js/level.js");
+    document.body.appendChild(importLevel);
+/*
+    import initFlip.js
+*/	
+var importInitFlip=document.createElement("script");
+    importInitFlip.setAttribute("type","text/javascript");
+    importInitFlip.setAttribute("src","./js/initFlip.js");
+    document.body.appendChild(importInitFlip);
+
+/*
+    import initHP.js
+*/	
+var importInitHP=document.createElement("script");
+    importInitHP.setAttribute("type","text/javascript");
+    importInitHP.setAttribute("src","./js/initHP.js");
+    document.body.appendChild(importInitHP);
+	
+/*
 	when wind is loaded flip puzzles after several seconds 
     reset next scores to zero
 */
 window.onload = function(){
-	localStorage.levelScore = parseInt(0);
-	localStorage.totalScore = parseInt(0);
-	setTimeout(function(){
-        var flippers = document.getElementsByClassName("flipper");
-        //confirm(flippers.length);
-        for(var i=0; i<flippers.length; i++){
-            flippers[i].style.transform = "rotateY(180deg)";
-        }					
-    }
-	, 2000);		
-    hpContainer = document.getElementById('hp');
-	init();
-	for(var i = 0; i < hp; i++)
-		hpContainer.appendChild(heart[i]);
-    timer = setInterval('run()', 1000);
+	initFlip();	
+    initHP();
+	getLevel();
+	getLevelSrc();  //for testing
 }

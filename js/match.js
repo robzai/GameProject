@@ -21,7 +21,7 @@ function getCanType($dst){
     get picture id
 */
 function getSrc($src){
-	sourceID = $src.attr("id");;
+	sourceID = $src.attr("id");
 	//alert(sourceID);
 }
 
@@ -31,7 +31,7 @@ function getSrc($src){
 */
 function match(){
 	//alert (garbageType +" " +canType);
-	return (garbageType == canType);
+	return ((garbageType == canType) || (garbageType == "easter"));
 }
 
 /*
