@@ -95,30 +95,8 @@ var newgame = {
 				updateScore();
 				window.location.href='pass.html';
 		}
-	};
-	
-	/*
-        if sth's id is set and it is clicked, 
-        will excute the showset method in "set"
-    */				
-	g("set").onclick = function() {
-		set.showset();
-		this.blur();
-	};
-	/*
-        if sth's id is music and it is clicked, 
-        will excute the closemusic method in "set"
-    */	
-	g("music").onclick = function() {
-		set.closemusic();
-	};	
-	/*
-        if sth's id is closese and it is clicked, 
-        will excute the closemusic method in "set"
-    */	
-	g("closese").onclick = function() {
-		set.closemusic();
-	};
+	};			
+
 				
 			
 				

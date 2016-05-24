@@ -73,6 +73,7 @@ div#mask {
 div#newgame {
 	border: 1px solid #000000;
     position:absolute;
+	margin-left:10px;
     top:5%;
 	width:312px;
 	height: 430px;
