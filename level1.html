@@ -40,18 +40,18 @@
 						<!-- main game part, players need to memorize all garbage pics below -->
 						<div class = "game">
 							<div id="canTouch">  <!-- elements inside canTouch can be dragged using touch screen -->
-								<div class = "garbage"></div>
-								<div class = "garbage"></div>
-								<div class = "garbage"></div>
-								<div class = "garbage"></div>
-								<div class = "garbage"></div>
+								<div data-canDrag="not" class = "garbage"></div>
+								<div data-canDrag="not" class = "garbage"></div>
+								<div data-canDrag="not" class = "garbage"></div>
+								<div data-canDrag="not" class = "garbage"></div>
+								<div data-canDrag="not" class = "garbage"></div>
 								<!-- garbage 1-->
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
 										<div class="front">
 											<!-- garbage players need to memorize -->
-											<img draggable="false" src="pic/milk.png" height ="65" width="65">
+											<img data-canDrag="not" draggable="false" src="pic/milk.png" height ="65" width="65">
 										</div>
 										<!-- picture on the back can be druged -->
 										<div class="back">
@@ -67,7 +67,7 @@
 									<div class="flipper">
 										<div class="front">
 											<!-- garbage players need to memorize -->
-											<img draggable="false" src="pic/news.png" height ="65" width="65">
+											<img data-canDrag="not" draggable="false" src="pic/news.png" height ="65" width="65">
 										</div>
 										<!-- picture on the back can be druged -->
 										<div class="back">
@@ -85,7 +85,7 @@
 									<div class="flipper">
 										<div class="front">
 											<!-- garbage players need to memorize -->
-											<img draggable="false" src="pic/milk.png" height ="65" width="65">
+											<img data-canDrag="not" draggable="false" src="pic/milk.png" height ="65" width="65">
 										</div>
 										<!-- picture on the back can be druged -->
 										<div class="back">
@@ -102,7 +102,7 @@
 									<div class="flipper">
 										<div class="front">
 											<!-- garbage players need to memorize -->
-											<img draggable="false" src="pic/cake.png" height ="65" width="65">
+											<img data-canDrag="not" draggable="false" src="pic/cake.png" height ="65" width="65">
 										</div>
 										<!-- picture on the back can be druged -->
 										<div class="back">
@@ -112,11 +112,11 @@
 									</div> 
 								</div>
 							</div>
-							<div class = "garbage"></div>
-							<div class = "garbage"></div>
-							<div class = "garbage"></div>
-							<div class = "garbage"></div>
-							<div class = "garbage"></div>							
+							<div data-canDrag="not" class = "garbage"></div>
+							<div data-canDrag="not" class = "garbage"></div>
+							<div data-canDrag="not" class = "garbage"></div>
+							<div data-canDrag="not" class = "garbage"></div>
+							<div data-canDrag="not" class = "garbage"></div>							
 						</div>    <!-- end of canTouch-->	
 
 						<!-- easter egg game -->
@@ -142,8 +142,8 @@
 					<script src="js/showclosediv.js"></script>
 					<script src="js/memorizetime.js"></script>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-					<script src="js/jquery.drag-drop.plugin-1.js"></script>
-					<script src="js/flip-1.js"></script>
+					<script src="js/jquery.drag-drop.plugin.js"></script>
+					<script src="js/gamePageOnLoad.js"></script>
 					<script src="js/dragdrop.js"></script>
 				</div>
 			<div class="col-xs-4 visible-md visible-lg"></div>

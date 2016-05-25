@@ -37,5 +37,5 @@ window.onload = function(){
 	initFlip();	
     initHP();
 	getLevel();
-	getLevelSrc();  //for testing
+	//getLevelSrc();  //for testing
 }

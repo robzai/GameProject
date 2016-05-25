@@ -1,14 +1,13 @@
 /*
-    this plug-in is especially for level one.
     we found this drag and drop plug-in for touch screen on line and made reference to it
     https://github.com/mikeplate/jquery-drag-drop-plugin
 */
+
 (function($) {
-	
-	var importMatch=document.createElement("script");
-    /*
+	/*
         import match.js
     */
+	var importMatch=document.createElement("script");
     importMatch.setAttribute("type","text/javascript");
     importMatch.setAttribute("src","./js/match.js");
     document.body.appendChild(importMatch);
@@ -28,14 +27,6 @@
 	importPass.setAttribute("type","text/javascript");
     importPass.setAttribute("src","./js/passGame.js");
     document.body.appendChild(importPass);
-	
-	/*
-        import showclosediv.js
-    */
-	var importShowclosediv=document.createElement("script");
-	importShowclosediv.setAttribute("type","text/javascript");
-    importShowclosediv.setAttribute("src","./js/showclosediv.js");
-    document.body.appendChild(importShowclosediv);
 	
     var defaultOptions = {
         makeClone: false,  // Drag a clone of the source, and not the actual source element
@@ -65,32 +56,26 @@
             hide the garbage when it is dragged 
             and check whether it is matched correctly
         */
+ 
         didDrop: function($src, $dst) {
+           
             //$src.appendTo($dst);      //Default is to move
                                         //the element in the DOM               
                                         //and insert it into the element where it is dropped
                                         //function in match.js
-			// this function is in match.js							
 			getSrc($src);
-			// this function is in match.js
 			getCanType($dst);
-			// see if the garbage and the bin are match
-			// this function is in match.js
+			//alert(canType);
 			if (match()){
                 addLife();
             }else{
                 minusLife();
             }
 			$src.hide();
-			// show the easrter egg game if an easter egg is dropped
-			if(returnGarbageType() == "easter"){
-				newgame.show();
-			}
-			// this function is in passGame.js
+			
 			dropGarbage();
-			//if(0){
-			if(checkSuccess() && checkEasterGamePlayed()){
-				alert("in drag-drop plugin,level success, score will be update after this message");
+			if(1){
+			//if(checkSuccess()){
                 updateScore();
 				window.location.href='pass.html';
 			}
@@ -122,7 +107,7 @@
             }
         }
     }
-    
+
     /*
         Public methods
     */
@@ -286,7 +271,7 @@
             event.stopPropagation();
             return false;
         },
-        
+
         /*
             onEnd
         */
