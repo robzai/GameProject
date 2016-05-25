@@ -31,7 +31,7 @@ function getSrc($src){
 */
 function match(){
 	//alert (garbageType +" " +canType);
-	return ((garbageType == canType) || (garbageType == "easter"));
+	return ((garbageType == canType) || (garbageType == "easter") );
 }
 
 /*

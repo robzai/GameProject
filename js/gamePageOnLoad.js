@@ -1,5 +1,4 @@
 /*
-    this js file is for level one
     import hp.js
 */
 var importJS=document.createElement("script");
@@ -28,14 +27,33 @@ var importInitHP=document.createElement("script");
     importInitHP.setAttribute("type","text/javascript");
     importInitHP.setAttribute("src","./js/initHP.js");
     document.body.appendChild(importInitHP);
+/*
+    import initScore.js
+*/	
+var importInitScore=document.createElement("script");
+    importInitScore.setAttribute("type","text/javascript");
+    importInitScore.setAttribute("src","./js/initScore.js");
+    document.body.appendChild(importInitScore);	
+/*
+    import initScore.js
+*/	
+var importMemorizetime=document.createElement("script");
+    importMemorizetime.setAttribute("type","text/javascript");
+    importMemorizetime.setAttribute("src","./js/memorizetime.js");
+    document.body.appendChild(importMemorizetime);		
 	
 /*
 	when wind is loaded flip puzzles after several seconds 
     reset next scores to zero
 */
 window.onload = function(){
-	initFlip();	
-    initHP();
+	startTimmer();
+	//initFlip();	
+    //initHP();
 	getLevel();
+	if(getLocalLevel() == 1){
+		initScore();
+	}
+	setToolNumber(1);
 	//getLevelSrc();  //for testing
 }

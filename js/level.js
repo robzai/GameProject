@@ -6,7 +6,7 @@ var extension = ".html";
 function setLevel(levelNo){
 	//alert("levelNO is" + levelNo);
 	localStorage.level = levelNo;
-	alert("localStorage level is" + localStorage.level);
+	//alert("localStorage level is" + localStorage.level);
 }
 
 function getLevelSrc(){
@@ -19,5 +19,5 @@ function getLevel(){
 }
 
 function getLocalLevel(){
-	return localStorage.level;
+	return parseInt(localStorage.level);
 }
