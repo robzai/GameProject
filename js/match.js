@@ -1,6 +1,7 @@
 var garbageType;
 var canType;
 var sourceID;
+var easterEggOn;
 /*
     get garbage type from active element
 */

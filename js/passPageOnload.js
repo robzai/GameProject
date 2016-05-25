@@ -14,7 +14,7 @@ var importLevel=document.createElement("script");
     document.body.appendChild(importLevel);	
 
 window.onload=function(){
-	alert("pass onload");
+	//alert("pass onload");
 	$("#next").attr("href", getLevelSrc())
 	totalScore();
 }

@@ -10,7 +10,7 @@ function setLevel(levelNo){
 }
 
 function getLevelSrc(){
-	alert("next level is" + (parseInt(localStorage.level) + 1));
+	//alert("next level is" + (parseInt(localStorage.level) + 1));
 	return level + (parseInt(localStorage.level) + 1) + extension;
 }
 

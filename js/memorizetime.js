@@ -15,8 +15,8 @@ var importInitHP=document.createElement("script");
     document.body.appendChild(importInitHP);
 	
 var m = 0;
-var s = 6;
-var setTime;
+var s = 3;
+var interv;
 /*
     display remaining time for memorizing garbages
 */
@@ -40,7 +40,7 @@ function showtime(){
 				initHP();
 				var time = document.getElementById("timer");
 				time.style.visibility = 'hidden';
-				clearInterval(setTime); 
+				clearInterval(interv); 
 			}
 		}
 }
@@ -49,5 +49,8 @@ function showtime(){
 */
 //var settime = setInterval(showtime,1000);
 function startTimmer(){
-	setTime = setInterval(showtime,1000);
+	var colon = document.getElementsByClassName("bd");
+	colon[0].innerHTML = ":";
+	showtime();
+	interv = setInterval(showtime,1000);
 }
