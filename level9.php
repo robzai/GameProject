@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<audio id="bgm" src="wonderful1.mp3"  loop="loop" autoplay></audio>  
-		<div class = "container">
+		<div data-level = "9" id="level" class = "container">
 			<div class = "row">
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
@@ -54,7 +54,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/milk.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/milk.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -70,7 +70,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/milk.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/milk.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -86,7 +86,7 @@
 										<div class="flipper">
 											<div class="front">
 											<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/milk.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/milk.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -102,7 +102,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/news.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/news.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -118,7 +118,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/cake.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/cake.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -134,7 +134,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/cake.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/cake.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -145,14 +145,14 @@
 										</div> 
 									</div>
 								</div>	
-								<div class = "garbage"></div>	
+								<div data-canDrag="not" class = "garbage"></div>	
 								<!-- garbage 7-->
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/cake.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/cake.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -169,7 +169,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/cake.png">
+												<img data-canDrag="not" draggable="false" src="pic/cake.png">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -180,13 +180,13 @@
 										</div>
 									</div>																
 								</div>
-								<div class = "garbage"></div>
+								<div data-canDrag="not" class = "garbage"></div>
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/cake.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/cake.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -204,7 +204,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/cake.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/cake.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -221,7 +221,7 @@
 										<div class="flipper">
 											<div class="front">
 											<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/milk.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/milk.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -237,7 +237,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/news.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/news.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -253,7 +253,7 @@
 										<div class="flipper">
 											<div class="front">
 											<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/milk.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/milk.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -269,7 +269,7 @@
 										<div class="flipper">
 											<div class="front">
 												<!-- garbage players need to memorize -->
-												<img draggable="false" src="pic/news.png" height ="65" width="65">
+												<img data-canDrag="not" draggable="false" src="pic/news.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
@@ -293,7 +293,7 @@
 					<script src="js/memorizetime.js"></script>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 					<script src="js/jquery.drag-drop.plugin.js"></script>
-					<script src="js/flip.js"></script>
+					<script src="js/gamePageOnLoad.js"></script>
 					<script src="js/dragdrop.js"></script>
 				<div class="col-xs-4 visible-md visible-lg"></div>
 			</div>	

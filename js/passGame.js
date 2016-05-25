@@ -38,7 +38,10 @@ function dropGarbage(){
     it returns true
 */
 function checkSuccess(){
-	return garbageNotDraggedYet == 0; 
+	if(document.getElementById("easter") == null)
+		return garbageNotDraggedYet == 0;
+	else
+		return (garbageNotDraggedYet == 0) && checkEasterGamePlayed();
 }
 
 

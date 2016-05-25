@@ -1,34 +1,16 @@
 /*
+    this plug-in is especially for level one.
     we found this drag and drop plug-in for touch screen on line and made reference to it
     https://github.com/mikeplate/jquery-drag-drop-plugin
 */
-
-(function($) {
-	
-	var importMatch=document.createElement("script");
-    /*
-        import match.js
-    */
-    importMatch.setAttribute("type","text/javascript");
-    importMatch.setAttribute("src","./js/match.js");
-    document.body.appendChild(importMatch);
-
-    /*
-        import hp.js
-    */
-	var importHP=document.createElement("script");
-    importHP.setAttribute("type","text/javascript");
-    importHP.setAttribute("src","./js/hp.js");
-    document.body.appendChild(importHP);
-	
+(function($) {		
 	/*
-        import passGame.js
-    */
-	var importPass=document.createElement("script");
-	importPass.setAttribute("type","text/javascript");
-    importPass.setAttribute("src","./js/passGame.js");
-    document.body.appendChild(importPass);
-	
+		import didDrop.js
+	*/
+	var importDidDrop=document.createElement("script");
+	importDidDrop.setAttribute("type","text/javascript");
+	importDidDrop.setAttribute("src","./js/didDrop.js");
+	document.body.appendChild(importDidDrop);
     var defaultOptions = {
         makeClone: false,  // Drag a clone of the source, and not the actual source element
         sourceClass: null, // Class to apply to source element when dragging a clone of the source element
@@ -57,29 +39,12 @@
             hide the garbage when it is dragged 
             and check whether it is matched correctly
         */
- 
         didDrop: function($src, $dst) {
-           
             //$src.appendTo($dst);      //Default is to move
                                         //the element in the DOM               
                                         //and insert it into the element where it is dropped
                                         //function in match.js
-			getSrc($src);
-			getCanType($dst);
-			//alert(canType);
-			if (match()){
-                addLife();
-            }else{
-                minusLife();
-            }
-			$src.hide();
-			
-			dropGarbage();
-			//if(1){
-			if(checkSuccess()){
-                updateScore();
-				window.location.href='success.html';
-			}
+			didDrop($src, $dst);
         }
     };
 
@@ -108,7 +73,7 @@
             }
         }
     }
-
+    
     /*
         Public methods
     */
@@ -272,7 +237,7 @@
             event.stopPropagation();
             return false;
         },
-
+        
         /*
             onEnd
         */
