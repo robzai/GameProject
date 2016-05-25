@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+	$sql = "SELECT numoftools FROM rank WHERE userName LIKE '$_SESSION[username]'";
+	$result = mysqli_query($db,$sql);
+	$row = mysqli_fetch_assoc($result);
+	$num = $row["numoftools"];	
+?>
 <html>
 	<head>
 		<title>Free Throw - level7</title>

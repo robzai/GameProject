@@ -1,6 +1,14 @@
+<?php
+	session_start();
+	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+	$sql = "SELECT numoftools FROM rank WHERE userName LIKE '$_SESSION[username]'";
+	$result = mysqli_query($db,$sql);
+	$row = mysqli_fetch_assoc($result);
+	$num = $row["numoftools"];	
+?>
 <html>
 	<head>
-		<title>Free Throw - level 3</title>
+		<title>Free Throw - level9</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/level1.css" rel="stylesheet" type="text/css" />
         <link href="css/hp.css" rel="stylesheet" type="text/css" />
@@ -39,8 +47,8 @@
 		
 						<!-- main game part, players need to memorize all garbage pics below -->
 						<div class = "game">
-							<div id="canTouch">
-								<!-- garbage 1-->
+							<div id="canTouch">							
+								<!-- garbage 1-->							
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
@@ -54,11 +62,9 @@
 												<img data-type = "mixed" id ="back0" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
 											</div>
 										</div> 
-									</div>
+									</div>								
 								</div>
-								<div class = "garbage"></div>
-								<div class = "garbage"></div>
-								<!-- garbage 2-->			
+								<!-- garbage 2-->								
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
@@ -72,10 +78,9 @@
 												<img data-type = "mixed" id ="back0" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
 											</div>
 										</div> 
-									</div>			
-								</div>
-								<div class = "garbage"></div>
-								<!-- garbage 3-->
+									</div>								
+								</div>									
+								<!-- garbage 3-->								
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
@@ -89,9 +94,9 @@
 												<img data-type = "mixed" id ="back0" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
 											</div>
 										</div> 
-									</div>
+									</div>								
 								</div>
-								<!-- garbage 4-->			
+								<!-- garbage 4-->
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
@@ -105,11 +110,9 @@
 												<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
 											</div>
 										</div> 
-									</div>	
+									</div>								
 								</div>
-								<div class = "garbage"></div>
-								<div class = "garbage"></div>
-								<!-- garbage 5-->			
+								<!-- garbage 5-->
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
@@ -123,9 +126,9 @@
 												<img id ="back2" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
 											</div>
 										</div> 
-									</div>
-								</div>
-								<!-- garbage 6-->			
+									</div>								
+								</div>									
+								<!-- garbage 6-->	
 								<div class = "garbage">
 									<div class="flip-container">
 										<div class="flipper">
@@ -141,8 +144,8 @@
 											</div>
 										</div> 
 									</div>
-								</div>
-								<div class = "garbage"></div>
+								</div>	
+								<div class = "garbage"></div>	
 								<!-- garbage 7-->
 								<div class = "garbage">
 									<div class="flip-container">
@@ -160,8 +163,41 @@
 										</div> 
 									</div>
 								</div>
+
+								<div class = "garbage">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<!-- garbage players need to memorize -->
+												<img draggable="false" src="pic/cake.png">
+											</div>
+											<!-- picture on the back can be druged -->
+											<div class="back">
+												<!-- back side of the garbage, easter egg game -->
+												<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" 
+												src = "pic/back.png">
+											</div>
+										</div>
+									</div>																
+								</div>
 								<div class = "garbage"></div>
-								<div class = "garbage"></div>
+								<div class = "garbage">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<!-- garbage players need to memorize -->
+												<img draggable="false" src="pic/cake.png" height ="65" width="65">
+											</div>
+											<!-- picture on the back can be druged -->
+											<div class="back">
+												<!-- back side of the garbage, easter egg game -->
+												<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" 
+												src = "pic/back.png"  height ="65" width="65">
+											</div>
+										</div> 
+									</div>
+								</div>
+
 								<!-- garbage 8-->
 								<div class = "garbage">
 									<div class="flip-container">
@@ -171,16 +207,81 @@
 												<img draggable="false" src="pic/cake.png" height ="65" width="65">
 											</div>
 											<!-- picture on the back can be druged -->
-										<div class="back">
-											<!-- back side of the garbage, easter egg game -->
-											<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" 
+											<div class="back">
+												<!-- back side of the garbage, easter egg game -->
+												<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" 
 												src = "pic/back.png"  height ="65" width="65">
-										</div>
-									</div> 
+											</div>
+										</div> 
+									</div>
 								</div>
+								<!-- garbage 3-->								
+								<div class = "garbage">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+											<!-- garbage players need to memorize -->
+												<img draggable="false" src="pic/milk.png" height ="65" width="65">
+											</div>
+											<!-- picture on the back can be druged -->
+											<div class="back">
+												<!-- back side of the garbage, dragable -->
+												<img data-type = "mixed" id ="back0" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+											</div>
+										</div> 
+									</div>								
+								</div>
+								<!-- garbage 4-->
+								<div class = "garbage">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<!-- garbage players need to memorize -->
+												<img draggable="false" src="pic/news.png" height ="65" width="65">
+											</div>
+											<!-- picture on the back can be druged -->
+											<div class="back">
+												<!-- back side of the garbage, dragable -->
+												<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+											</div>
+										</div> 
+									</div>								
+								</div>
+								<!-- garbage 3-->								
+								<div class = "garbage">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+											<!-- garbage players need to memorize -->
+												<img draggable="false" src="pic/milk.png" height ="65" width="65">
+											</div>
+											<!-- picture on the back can be druged -->
+											<div class="back">
+												<!-- back side of the garbage, dragable -->
+												<img data-type = "mixed" id ="back0" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+											</div>
+										</div> 
+									</div>								
+								</div>
+								<!-- garbage 4-->
+								<div class = "garbage">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<!-- garbage players need to memorize -->
+												<img draggable="false" src="pic/news.png" height ="65" width="65">
+											</div>
+											<!-- picture on the back can be druged -->
+											<div class="back">
+												<!-- back side of the garbage, dragable -->
+												<img id ="back1" class="draggableTrash" draggable="true" ondragstart="drag(event)" src = "pic/back.png"  height ="65" width="65">
+											</div>
+										</div> 
+									</div>								
+								</div>
+	
 							</div><!-- end of touch-->
-						</div>  
-					</div><!-- end of game-->
+						</div><!-- end of game-->
 						<div class = "footer">
 							<!-- setting button-->
 							<a  href="index.html"><img class = "setting" src="pic/end.png"></a>
@@ -198,4 +299,4 @@
 			</div>	
 		</div>
 	</body>
-</html>
+</html> 

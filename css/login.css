@@ -1,0 +1,16 @@
+.main {
+	background-image: url(pic/bg1.png);
+	width: 320px;
+	height: 480px;
+	color: #000;
+}
+
+.login {
+	width:320px;
+	height: 300px;
+	text-align: center;
+	padding-top: 62%;
+	font-size: 16px;
+	font-weight: 700;
+}
+

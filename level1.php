@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+	$sql = "SELECT numoftools FROM rank WHERE userName LIKE '$_SESSION[username]'";
+	$result = mysqli_query($db,$sql);
+	$row = mysqli_fetch_assoc($result);
+	$num = $row["numoftools"];	
+?>
 <html>
 	<head>
 		<title>Free Throw - level 1</title>
@@ -17,10 +25,8 @@
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
 					<div class = "main">
-						<div class = "timer" id = "timer">
-							<div class="Countdown" id="time">
-								<span id="m"></span><span class="bd">:</span><span id="s"></span>
-							</div>
+						<div class = "timer">
+							<?php echo $num;?>
 						</div>
 						<div id="hp"></div>
 						<!-- bin div ganna contain all different trashes here, and garbage pics can be dragged into these trashes -->

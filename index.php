@@ -7,6 +7,7 @@
 		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
+		<?php include("php/connectdb.php"); ?>
 		<div class = "container">
 			<div class = "row">
 				<div class="col-xs-4 visible-md visible-lg"></div>
@@ -20,6 +21,11 @@
 							<a href="levelpage.html"><img class="bannerNButtons" src="pic/startbutton.png" alt="start"></a>
 							<br/>
 							<a href="tutorial.html"><img class="bannerNButtons" src="pic/howtoplaybutton.png" alt="howtoplay"></a>
+							<?php 
+							
+								welcome back $_POST["username"];
+							
+							?>
 						</div>
 					</div>	
 				</div>
