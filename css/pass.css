@@ -5,6 +5,12 @@
 	height: 480;
 }
 
+.passmain {
+	background-image: url(pic/passPage.png);
+	width: 320;
+	height: 480;
+}
+
 /*Text box for name php */
 .score {
 	height: 80px;

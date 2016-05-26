@@ -1,8 +1,7 @@
-
 .main {
 	background-image: url(pic/bg1.png);
-	width: 320;
-	height: 480;
+	width: 320px;
+	height: 480px;
 }
 
 .timer {
@@ -48,6 +47,16 @@
 .footer {
 	width: 320;
 	height: 15;
+}
+.numofhints {
+	font-size:18px;
+	color:#000;
+	font-weight: 1000px;
+	position:absolute;
+	float:right;
+	margin-left: 80%;
+	padding-top: 6%;
+	text-align:center;
 }
 
 .hints {

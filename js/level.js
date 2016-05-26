@@ -1,5 +1,5 @@
 var level = "level"
-var extension = ".html";
+var extension = ".php";
 
 //localStorage.level = 0;
 

@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+	$sql = "SELECT numoftools FROM rank WHERE userName LIKE '$_SESSION[username]'";
+	$result = mysqli_query($db,$sql);
+	$row = mysqli_fetch_assoc($result);
+	$num = $row["numoftools"];	
+?>
 <html>
 	<head>
 		<title>Free Throw - level 1</title>
@@ -19,7 +27,7 @@
 					<div class = "main">
 						<div class = "timer" id = "timer">
 							<div class="Countdown" id="time">
-								<span id="m"></span><span class="bd"></span><span id="s"></span>
+								<span id="m"></span><span class="bd">:</span><span id="s"></span>
 							</div>
 						</div>
 						<div id="hp"></div>
@@ -124,27 +132,29 @@
 							<div data-canDrag="not" class = "garbage"></div>
 							<div data-canDrag="not" class = "garbage"></div>							
 						</div>    <!-- end of canTouch-->	
+							
+							<!-- easter egg game -->
+							<!-- a div cover on main game -->
+							<div id="mask"></div>
+							<!-- game  -->
+							<div id="newgame">
+								Find out the pig with hat XD			
+								<map name="pigHat" id="pigHat">
+									<!-- the place is the pig with hat, only this area is clickable -->
+									<area shape="rect" coords="165,260,210,335" id="fnquit" alt="Pig wearing a hat" />
+								</map>
+								<img src="pic\eastergame.png" usemap="#pigHat" alt="Hidden and Find picture">
+							</div>
+						</div><!-- end of game-->
+						<div class = "footer">
 
-						<!-- easter egg game -->
-						<!-- a div cover on main game -->
-						<div id="mask"></div>
-						<!-- game  -->
-						<div id="newgame">
-							Find out the pig with hat XD			
-							<map name="pigHat" id="pigHat">
-							<!-- the place is the pig with hat, only this area is clickable -->
-								<area shape="rect" coords="165,260,210,335" id="fnquit" alt="Pig wearing a hat" />
-							</map>
-							<img src="pic\eastergame.png" usemap="#pigHat" alt="Hidden and Find picture">
-						</div>
-					</div>    <!-- end of game-->
-
-					<div class = "footer">
-						<!-- setting button-->
-						<a  href="index.html"><img class = "setting" src="pic/end.png"></a>
-						<!-- hints tool button-->
-						<img class = "hints" src="pic/help.png" onclick="useTool()" >
-					</div>
+							<!-- setting button-->
+							<a  href="index.html"><img class = "setting" src="pic/end.png"></a>
+							<!-- hints tool button-->
+							<img class = "hints" src="pic/help.png"  onclick="useTool()">
+							<div class = "numofhints"><?php echo $num."&times;";?></div>
+						</div><!-- end of footer-->
+					</div><!-- end of main -->
 					<script src="js/showclosediv.js"></script>
 					<script src="js/memorizetime.js"></script>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -152,17 +162,8 @@
 					<script src="js/gamePageOnLoad.js"></script>
 					<script src="js/dragdrop.js"></script>
 					<script src="js/tool.js"></script>
-					
-					
-					<script src="js/randomCan.js"></script>
-					
-				</div>
-			<div class="col-xs-4 visible-md visible-lg"></div>
-		</div>	
-	</div>
-	</div>
-</body>
-
-
-
+				<div class="col-xs-4 visible-md visible-lg"></div>
+			</div>	
+		</div>
+	</body>
 </html>

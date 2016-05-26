@@ -8,13 +8,13 @@ document.body.appendChild(hpJS);
     add every level's score to localStorage.levelScore, 
     and store in localStorage.totalScore
 */
-
+var score;
 function totalScore(){
     localStorage.totalScore = parseInt(localStorage.totalScore) + parseInt(localStorage.levelScore);
-	//alert("total score: "+localStorage.totalScore);
-     
 	document.getElementById('scoreDisplay').innerHTML = 'score:'+ localStorage.totalScore;
 	document.getElementById("ttscore").value = localStorage.totalScore;
+	//alert("total score: "+localStorage.totalScore);
+
 	//alert("updatae total score");
 }
 

@@ -48,13 +48,14 @@ function getNumOfPic(){
 }
 
 
-function randomGarbPic(){	
+function randomGarbPic(){
+		//alert("garbs need to rand" + numOfGarb.length);
 	for(var i=1; i<=numOfGarb.length; i++){
 		randomGarbType();
 		//Math.floor(Math.random()*(max-min+1)+min);
 		garbNo = Math.floor(Math.random()*(getNumOfPic())+1);
 		//alert("data-type" + garbTypeFloder);
-		alert(idBack + i);
+		//alert(idBack + i);
 		document.getElementById(idBack + i).setAttribute("data-type",garbTypeFloder);
 		//alert("src: " + garbFloder + garbTypeFloder + "/" + garbNo + garbExten);
 		document.getElementById(idBeg + i + idEnd).setAttribute("src",garbFloder + garbTypeFloder 
