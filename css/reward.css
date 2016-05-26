@@ -1,8 +1,5 @@
 .main {
 	background-image: url(pic/failPage.png);
-	width: 320;
-	height: 480;
-	font: 20px;
-	color: #000;
-	font-weight: 800px;
+	width: 320px;
+	height: 480px;
 }
