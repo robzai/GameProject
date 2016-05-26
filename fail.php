@@ -22,18 +22,26 @@
 				<div class="col-xs-4">
 					<div class = "main">
 						<div class = "score">
-							<div id = "scoreDisplay"></div>
-							<!-- this is the info that will pass to leaderboard-->
-							<form action="leaderboard.php" method="post">
+							<form name="upscore" action="leaderboard.php" method="post">
 								<input type="hidden" name="ttscore" id="ttscore"/>
-								<input type="submit" />
 							</form>
+							<div id = "scoreDisplay"></div>
+							<div class = "home">
+								<a href ="#"><img src = "pic/button/chooseLevelButton.png"></a>
+							</div>
+							<div class = "next">
+								<img src="pic/button/rankButton.png" onclick="upscore.submit()"> 
+							</div>
+							
+							
+							<!-- this is the info that will pass to leaderboard-->
+
 						</div>
 					</div>	
 				</div>
 				<div class="col-xs-4 visible-md visible-lg"></div>
 			</div>
 		</div>	
-		<script src="js/totalScore.js"></script>
+		<script src="js/fial_successPageOnload.js"></script>
 	</body>
 </html>

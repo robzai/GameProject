@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<audio id="bgm" src="wonderful1.mp3"  loop="loop" autoplay></audio>  
-		<div data-level = "2" id="level" class = "container">
+		<div data-level = "1" id="level" class = "container">
 			<div class = "row">
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">

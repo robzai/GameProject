@@ -2,7 +2,8 @@
 	session_start();
 	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error()); 
 	//new total score from this play time
-	$total = (int)$_POST["ttscore"];
+	$total = $_POST["ttscore"];
+	echo "$total";
 	//select score record from datdabase
 	$data = "SELECT score FROM rank WHERE userName LIKE '$_SESSION[username]'";
 	$r = mysqli_query($db,$data);
