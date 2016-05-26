@@ -11,7 +11,7 @@ function getGarbageType($sourceElement){
 }
 
 /*
-    get bin type from dropped element
+    get trash bin type from dropped element
 */
 function getCanType($dst){
 	canType = $dst.attr("data-type");
