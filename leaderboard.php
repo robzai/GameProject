@@ -51,6 +51,8 @@
 											echo "<tr><td><img src= 'pic/leader/cu.png'></td><td class='third'>".$row['userName']."</td>";
 											echo"<td class='third'>".$row['score']."</td></tr>";
 											$i++;
+										} else if($i ==5) {
+											break;
 										} else {
 											echo "<tr><td></td><td>".$row["userName"]."</td>";
 											echo "<td>".$row["score"]."</td></tr>";

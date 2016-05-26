@@ -11,8 +11,7 @@ document.body.appendChild(hpJS);
 
 function totalScore(){
     localStorage.totalScore = parseInt(localStorage.totalScore) + parseInt(localStorage.levelScore);
-	//alert("total score: "+localStorage.totalScore);
-     
+	alert("total score: "+localStorage.totalScore);
 	document.getElementById('scoreDisplay').innerHTML = 'score:'+ localStorage.totalScore;
 	document.getElementById("ttscore").value = localStorage.totalScore;
 	//alert("updatae total score");

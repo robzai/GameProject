@@ -124,9 +124,9 @@
 											</div>
 											<!-- picture on the back can be druged -->
 											<div class="back">
-												<!-- back side of the garbage, dragable -->
-												<img  data-type = "paper" id ="back1" class="draggableTrash" 
-												draggable="true" ondragstart="drag(event)" src = "pic/back.png">
+												<!-- back side of the garbage, easter egg game -->
+												<img data-type = "easter" id ="easter" class="draggableTrash" 
+												src="pic/egg.png" id="easter">
 											</div>
 										</div> 
 									</div>
@@ -137,6 +137,19 @@
 								<div data-canDrag="not" class = "garbage"></div>
 								<div data-canDrag="not" class = "garbage"></div>
 							</div>	<!-- end of canTouch-->
+							
+							<!-- easter egg game -->
+							<!-- a div cover on main game -->
+							<div id="mask"></div>
+							<!-- game  -->
+							<div id="newgame">
+								Find out the pig with hat XD			
+								<map name="pigHat" id="pigHat">
+									<!-- the place is the pig with hat, only this area is clickable -->
+									<area shape="rect" coords="165,260,210,335" id="fnquit" alt="Pig wearing a hat" />
+								</map>
+								<img src="pic\eastergame.png" usemap="#pigHat" alt="Hidden and Find picture">
+							</div>
 						</div><!-- end of game-->
 						<div class = "footer">
 
