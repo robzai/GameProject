@@ -5,7 +5,11 @@
 }
 
 .first {
+<<<<<<< HEAD
 	padding-top: 45%;
+=======
+	padding-top: 46%;
+>>>>>>> f577851f2774299b6a5255986121bfaac71c2597
 	padding-left: 4%;
 	text-align: center;
 }
@@ -16,6 +20,7 @@
 	text-align: center;
 }
 
+<<<<<<< HEAD
 #1sttool {
 	width: 100px;
 	height: 100px;
@@ -32,6 +37,8 @@
 	
 }
 
+=======
+>>>>>>> f577851f2774299b6a5255986121bfaac71c2597
 #homeButton {
 	padding-top:10%;
 	text-align: center;

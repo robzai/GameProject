@@ -7,6 +7,7 @@
 	$one = $row["1sttool"];	
 	$two = $row["2ndtool"];	
 	$three = $row["3rdtool"];	
+
 ?>
 
 <html lang="en">
@@ -63,13 +64,13 @@
 								}
 							?>	
 						</div>
-						
 						<div id = "homeButton">
 							<a href="index_in.php"><img src="pic/button/homeButton.png" alt="item button"></a>
 						</div>
 					</div>	
 				</div>
 				<div class="col-xs-4 visible-md visible-lg"></div>
+
 			</div>
 		</div>	
 	</body>

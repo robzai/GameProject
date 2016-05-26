@@ -31,7 +31,7 @@ function getSrc($src){
     the garbage is matched correctly
 */
 function match(){
-	//alert (garbageType +" " +canType);
+	alert ("match garb can: " + garbageType +" " +canType);
 	return ((garbageType == canType) || (garbageType == "easter") );
 }
 
