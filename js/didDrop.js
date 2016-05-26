@@ -67,12 +67,12 @@ function didDrop($src, $dst){
 	}
 	// this function is in passGame.js
 	dropGarbage();
-	if(1){
-	//if(checkSuccess()){	//this function is in passGame.js
+	//if(1){
+	if(checkSuccess()){	//this function is in passGame.js
 		//alert("in drag-drop plugin,level success, score will be update after this message");
         updateScore();
 		if(getLocalLevel() == 9){	//this function is in level.js
-			window.location.href='success.html';
+			window.location.href='success.php';
 			return;
 		}
 		window.location.href='pass.html';

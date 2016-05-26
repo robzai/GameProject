@@ -16,6 +16,9 @@
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
 					<div class = "main">
+						<div class ="header">
+							<img src = "pic/header/signup.png">
+						</div>
 						<div class = "login">
 							<!-- this is the info that will pass to leaderboard-->
 							<form action="index_up.php" method="post">

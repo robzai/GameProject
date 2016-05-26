@@ -1,11 +1,12 @@
 <?php
 	session_start();
 	if($_POST['pwd'] != $_POST['repwd']) {
-		echo "your passwords don't match";
-		header("Location: signup.php");
+		echo "your passwords don't match";		
+		echo "<script>setTimeout('window.location=\'signup.php\';', 3000)</script>";
+		die();
 	} else {
 		$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
-		$sql = "INSERT INTO rank VALUES ('$_POST[username]','$_POST[pwd]',0,0)";
+		$sql = "INSERT INTO rank VALUES ('$_POST[username]','$_POST[pwd]',0,0,0,0,0)";
 		mysqli_query($db,$sql);
 		$_SESSION['username']=$_POST['username'];
 		$_SESSION['pwd']=$_POST['pwd'];		
@@ -39,7 +40,8 @@
 						</div>
 						<div class = "archi">
 							<a href = "#"> <img src = "pic/button/archi.png"> </a>
-						</div>					
+						</div>		
+						<a href="logout.php">logout</a>
 					</div>	
 				</div>
 				<div class="col-xs-4 visible-md visible-lg"></div>
