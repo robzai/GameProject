@@ -18,7 +18,7 @@
 					<div class = "main">
 						<div class = "login">
 							<!-- this is the info that will pass to leaderboard-->
-							<form action="test2.php" method="post">
+							<form action="index_up.php" method="post">
                                 username: <input name="username" /><br><br>
 								password: <input name="pwd" /><br><br>
 								repeat pwd: <input name="repwd" /><br><br>

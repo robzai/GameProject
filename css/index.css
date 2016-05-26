@@ -1,0 +1,49 @@
+.main {
+	background-image: url(pic/background.png);
+	width: 320px;
+	height: 480px;
+}
+
+marquee {
+	width: 320px;
+	height: 60px;
+}
+.login {
+	width: 280px;
+	height: 10px;
+	padding-top: 50%;
+	padding-left: 15%;
+	text-align: center;
+}
+
+.signup {
+	width: 280px;
+	height: 10px;
+	padding-top:25%;
+	padding-left: 15%;
+	text-align: center;
+}
+
+.start {
+	width: 280px;
+	height: 10px;
+	padding-top: 40%;
+	padding-left: 12%;
+	text-align: center;	
+}
+
+.tutorial {
+	width: 280px;
+	height: 10px;
+	padding-top:20%;
+	padding-left: 14%;
+	text-align: center;	
+}
+
+.archi {
+	width: 280px;
+	height: 10px;
+	padding-top:20%;
+	padding-left: 16%;
+	text-align: center;	
+}

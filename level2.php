@@ -189,10 +189,11 @@
 							</div>	<!-- end of canTouch-->
 						</div><!-- end of game-->
 						<div class = "footer">
+							<div class = "numofhints"><?php echo $num."&times;";?></div>
 							<!-- setting button-->
 							<a  href="index.html"><img class = "setting" src="pic/end.png"></a>
 							<!-- hints tool button-->
-							<img class = "hints" src="pic/help.png">
+							<img class = "hints" src="pic/help.png"  onclick="useTool()">
 						</div><!-- end of footer-->
 					</div><!-- end of main -->
 					<script src="js/showclosediv.js"></script>
@@ -201,6 +202,7 @@
 					<script src="js/jquery.drag-drop.plugin.js"></script>
 					<script src="js/gamePageOnLoad.js"></script>
 					<script src="js/dragdrop.js"></script>
+					<script src="js/tool.js"></script>
 				<div class="col-xs-4 visible-md visible-lg"></div>
 			</div>	
 		</div>

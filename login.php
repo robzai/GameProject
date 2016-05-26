@@ -13,9 +13,12 @@
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
 					<div class = "main">
+						<div class = "header">
+							<img src = "pic/header/login.png">
+						</div>
 						<div class = "login">
 							<!-- this is the info that will pass to leaderboard-->
-							<form action="test.php" method="post">
+							<form action="index_in.php" method="post">
                                 username: <input name="username" /><br><br>
 								password: <input name="pwd" /><br><br>
 								<input type="submit" name="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
