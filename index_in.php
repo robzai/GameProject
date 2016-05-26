@@ -1,8 +1,6 @@
 <?php 
 	session_start();
 	
-	//ob_flush();
-	
 	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
 	$sql = "SELECT pwd FROM rank WHERE userName LIKE '$_POST[username]'";
 	$result = mysqli_query($db,$sql);
@@ -24,7 +22,6 @@
 			}	
 		}
 	}
-
 ?>
 <html lang="en">
 	<head>
@@ -53,9 +50,11 @@
 							<a href = "#"> <img src = "pic/button/tutorial.png"> </a>
 						</div>
 						<div class = "archi">
-							<a href = "#"> <img src = "pic/button/archi.png"> </a>
+							<a href = "reward.php"> <img src = "pic/button/archi.png"> </a>
 						</div>	
-						<a href="logout.php">logout</a>			
+						<div class = "logout">
+							<a href="logout.php">logout</a>	
+						</div>
 					</div>	
 				</div>
 				<div class="col-xs-4 visible-md visible-lg"></div>

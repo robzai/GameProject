@@ -151,7 +151,7 @@
 							<!-- setting button-->
 							<a  href="index.html"><img class = "setting" src="pic/end.png"></a>
 							<!-- hints tool button-->
-							<img class = "hints" src="pic/help.png"  onclick="useTool()">
+							<img class = "hints" src="pic/starTool.png"  onclick="useTool()">
 							<div class = "numofhints"><?php echo $num."&times;";?></div>
 						</div><!-- end of footer-->
 					</div><!-- end of main -->

@@ -258,7 +258,7 @@
 							<!-- setting button-->
 							<a  href="index.html"><img class = "setting" src="pic/end.png"></a>
 							<!-- hints tool button-->
-							<img class = "hints" src="pic/help.png">
+							<img class = "hints" src="pic/starTool.png">
 						</div><!-- end of footer-->
 					</div><!-- end of main -->
 					<script src="js/showclosediv.js"></script>

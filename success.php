@@ -19,14 +19,18 @@
 			<div class = "row">
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
-					<div class = "main">
+					<div class = "successmain">
 						<div class = "score">
-							<div id="scoreDisplay"></div>
-							<!-- this is the info that will pass to leaderboard-->
-							<form action="leaderboard.php" method="post">
+							<form name="upscore" action="leaderboard.php" method="post">
 								<input type="hidden" name="ttscore" id="ttscore"/>
-								<input type="submit" />
 							</form>
+							<div id = "scoreDisplay"></div>
+							<div class = "home1">
+								<a href ="index_in.php"><img src = "pic/button/homeButton.png"></a>
+							</div>
+							<div class = "next1">
+								<img src="pic/button/rankButton.png" onclick="upscore.submit()"> 
+							</div>
 						</div>
 					</div>	
 				</div>
