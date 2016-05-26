@@ -4,7 +4,7 @@
 var canFloder = "./pic/can/";
 var picExten = ".png";
 var Id = "can";
-var arr = ["food", "glass", "paper", "red", "refund"];
+var arr = ["food", "glass", "paper", "red", "refund", "container"];
 var cans;
 
 function randomsort(a, b) {

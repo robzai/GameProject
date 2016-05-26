@@ -18,6 +18,7 @@ var numGrabInDiffType = [];
 	numGrabInDiffType[2] = ["paper", 3];
 	numGrabInDiffType[3] = ["red", 6];
 	numGrabInDiffType[4] = ["refund", 3];
+	numGrabInDiffType[5] = ["container", 3];
 var numOfGarb = document.getElementsByClassName("draggableTrash");
 var idBeg = "gar";
 var idEnd = "Front";
