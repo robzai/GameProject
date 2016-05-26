@@ -11,25 +11,30 @@
 	<head>
 		<title>Free Throw - Reward</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/homeNLevel.css"/>
 		<link href="css/reward.css" rel="stylesheet" type="text/css" />
 		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
-		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
 	</head>
 	<body>	
 		<div class = "container">
 			<div class = "row">
-				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
-				<div class = "passmain">
-
-				</div>	
+					<div class = "main">
+						<div class = "first">
+							<img src="pic/button/cangetitem.png" alt="item button">
+						</div>
+						<div class = "second">
+							<img src="pic/button/cangetitem.png" alt="item button">
+						</div>
+						<div class = "second">
+							<img src="pic/button/cangetitem.png" alt="item button">
+						</div>
+						
+						<div id = "homeButton">
+							<a href="index_in.php"><img src="pic/button/home.png" alt="item button"></a>
+						</div>
+					</div>	
 				</div>
-				<div class="col-xs-4 visible-md visible-lg"></div>
 			</div>
 		</div>	
-		<div id="sentScore" data="-1"></div>
-		<script src="js/passPageOnload.js"></script>
 	</body>
 </html>

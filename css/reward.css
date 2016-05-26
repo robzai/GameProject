@@ -1,5 +1,22 @@
 .main {
-	background-image: url(pic/failPage.png);
+	background-image: url(pic/arbg.png);
 	width: 320px;
 	height: 480px;
+}
+
+.first {
+	padding-top: 45%;
+	padding-left: 4%;
+	text-align: center;
+}
+
+.second {
+	padding-top:3%;
+	padding-left: 3%;
+	text-align: center;
+}
+
+#homeButton {
+	padding-top:10%;
+	text-align: center;
 }
