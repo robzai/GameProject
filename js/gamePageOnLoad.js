@@ -40,13 +40,29 @@ var importInitScore=document.createElement("script");
 var importMemorizetime=document.createElement("script");
     importMemorizetime.setAttribute("type","text/javascript");
     importMemorizetime.setAttribute("src","./js/memorizetime.js");
-    document.body.appendChild(importMemorizetime);		
+    document.body.appendChild(importMemorizetime);	
+/*
+    import randomCan.js
+*/	
+var importRanCan=document.createElement("script");
+    importRanCan.setAttribute("type","text/javascript");
+    importRanCan.setAttribute("src","./js/randomCan.js");
+    document.body.appendChild(importRanCan);
+/*
+    import randomGarbage.js
+*/	
+var importRanGarb=document.createElement("script");
+    importRanGarb.setAttribute("type","text/javascript");
+    importRanGarb.setAttribute("src","./js/randomGarbage.js");
+    document.body.appendChild(importRanGarb);		
 	
 /*
 	when wind is loaded flip puzzles after several seconds 
     reset next scores to zero
 */
 window.onload = function(){
+	fecthRandCan();
+	randomGarbPic();
 	startTimmer();
 	//initFlip();	
     //initHP();

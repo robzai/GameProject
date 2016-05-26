@@ -15,7 +15,7 @@ var importInitHP=document.createElement("script");
     document.body.appendChild(importInitHP);
 	
 var m = 0;
-var s = 3;
+var s = 15;
 var interv;
 /*
     display remaining time for memorizing garbages
