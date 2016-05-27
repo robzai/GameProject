@@ -45,10 +45,10 @@
 							<img src='pic/header/rolltwo.png'>
 						</marquee>
 						<div class = "start"> 
-							<a href = "level1.php"> <img src = "pic/button/start.png"> </a>
+							<a href = "levelpage.php"> <img src = "pic/button/start.png"> </a>
 						</div>
 						<div class = "tutorial">
-							<a href = "#"> <img src = "pic/button/tutorial.png"> </a>
+							<a href = "tutorial.php"> <img src = "pic/button/tutorial.png"> </a>
 						</div>
 						<div class = "archi">
 							<a href = "reward.php"> <img src = "pic/button/archi.png"> </a>

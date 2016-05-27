@@ -22,7 +22,6 @@
 		<title>Free Throw - LeaderBoard</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/leaderboard.css" rel="stylesheet" type="text/css" />
-		<link href="css/tutorial.css" rel="stylesheet" type="text/css">
 		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 	<body>

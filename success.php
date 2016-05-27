@@ -25,7 +25,7 @@
 							</form>
 							<div id = "scoreDisplay"></div>
 							<div class = "home1">
-								<a href ="index_in.php"><img src = "pic/button/homeButton.png"></a>
+								<a href ="homepage.php"><img src = "pic/button/homeButton.png"></a>
 							</div>
 							<div class = "next1">
 								<img src="pic/button/rankButton.png" onclick="upscore.submit()"> 
