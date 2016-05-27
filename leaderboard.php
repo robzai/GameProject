@@ -31,9 +31,6 @@
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
 					<div class ="main">
-						<div class = "rank">
-							<img src = "pic/rank.png">
-						</div>
 						<div class = "scoretable">
 							<?php		
 								echo "<table><tr><td></td><td class='title'>Name</td><td class='title'>Score</td></tr>";
@@ -62,6 +59,10 @@
 								}
 								echo "</table>";
 							?>
+					</div>
+					
+					<div id = "homeButton">
+						<a href="index_in.php"><img src="pic/button/homeButton.png" alt="home button"></a>
 					</div>
 				</div>	
 				<div class="col-xs-4 visible-md visible-lg"></div>
