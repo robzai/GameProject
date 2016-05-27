@@ -26,19 +26,19 @@ table tr .title {
 }
 
 table tr .first {
-	color:f4ea26;
+	color:000;
 	font-size: 20px;
 	font-weight: 800;
 }
 
 table tr .second {
-	color:b7b7ac;
+	color:000;
 	font-size: 20px;
 	font-weight: 800;
 }
 
 table tr .third {
-	color:aa6d51;
+	color:#000;
 	font-size: 20px;
 	font-weight: 800;
 }
@@ -67,7 +67,7 @@ table tr td:first-child{
 .scoretable {
 	width: 280px;
 	height: 300px;
-	padding-top: 25%;
+	padding-top: 35%;
 	margin-left: 8%;
 }
 

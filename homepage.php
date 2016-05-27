@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+	if(!isset($_SESSION['username'])) {
 	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
 	$sql = "SELECT pwd FROM rank WHERE userName LIKE '$_POST[username]'";
 	$result = mysqli_query($db,$sql);
@@ -20,6 +21,7 @@
 				die();
 			}	
 		}
+	}
 	}
 ?>
 <html lang="en">
