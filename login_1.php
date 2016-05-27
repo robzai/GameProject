@@ -1,9 +1,12 @@
 <?php
+	//if the confirm password is different from your first input password
 	if($_POST['pwd'] != $_POST['repwd']) {
+		//shwo error message and navigate to sign up page
 		echo "your passwords don't match";		
 		echo "<script>setTimeout('window.location=\'signup.php\';', 3000)</script>";
 		die();
 	} else {
+		//if match, insert new player's info into database
 		$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
 		$sql = "INSERT INTO rank VALUES ('$_POST[username]','$_POST[pwd]',0,0,0,0,0)";
 		mysqli_query($db,$sql);	

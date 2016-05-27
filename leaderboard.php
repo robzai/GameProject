@@ -1,9 +1,10 @@
 <?php
+	//make sure the player is under login status.
 	session_start();
+	//connect to database
 	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error()); 
 	//new total score from this play time
 	$total = $_POST["ttscore"];
-	echo "$total";
 	//select score record from datdabase
 	$data = "SELECT score FROM rank WHERE userName LIKE '$_SESSION[username]'";
 	$r = mysqli_query($db,$data);
@@ -35,6 +36,7 @@
 								echo "<table><tr><td></td><td class='title'>Name</td><td class='title'>Score</td></tr>";
 								// output data of each row
 								$i = 0;
+								//show five players' info with the highest scores
 								while($row = mysqli_fetch_assoc($result)) {
 										if ($i == 0) {
 											echo "<tr><td><img src= 'pic/leader/golden.png'></td><td class='first'>".$row['userName']."</td>";
