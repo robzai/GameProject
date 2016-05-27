@@ -36,7 +36,7 @@
         },
 
         /*
-            hide the garbage when it is dragged 
+            hide the garbage when it is dropped 
             and check whether it is matched correctly
         */
         didDrop: function($src, $dst) {

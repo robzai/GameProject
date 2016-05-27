@@ -1,4 +1,8 @@
 /*
+	js to check if one level is passed
+*/
+
+/*
     import showclosediv.js
 */
 var importEasterValue=document.createElement("script");

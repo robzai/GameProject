@@ -1,4 +1,8 @@
 /*
+	js to show a pop-up window when player achieve a medal
+*/
+
+/*
     import totalScore.js
 */
 var importTotalScore=document.createElement("script");

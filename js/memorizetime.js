@@ -1,4 +1,9 @@
 /*
+	js to set the memorize time, after this time garbage
+	pictures will flip over
+*/
+
+/*
     import initFlip.js
 */	
 var importInitFlip=document.createElement("script");

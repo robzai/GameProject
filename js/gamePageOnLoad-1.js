@@ -1,4 +1,7 @@
 /*
+	this js file is just for level 1
+*/
+/*
     import hp.js
 */
 var importJS=document.createElement("script");
@@ -57,8 +60,7 @@ var importRanGarb=document.createElement("script");
     document.body.appendChild(importRanGarb);		
 	
 /*
-	when wind is loaded flip puzzles after several seconds 
-    reset next scores to zero
+	when the game page is loaded, run this function
 */
 window.onload = function(){
 	//fecthRandCan();
