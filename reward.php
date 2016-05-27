@@ -26,42 +26,22 @@
 						<div class = "displayscore">
 							<?php echo "Highest Score: ".$total ?>
 						</div>
-						<div class = "first">
+						<div class = "medal">
 							<?php 
 								if ( $total > 500) {
-									echo "<div id = '1sttool'>";
-									echo "<img src='pic/button/getitem.png' alt='item button'>";
-									echo "</div>";									
+									echo "<img class = '1sttool' src='pic/medal/cu.png' alt='item button'>";								
 								} else {
-									echo "<div id = '1sttool'>";
-									echo "<img src='pic/button/canfetitem.png' alt='item button'>";
-									echo "</div>";								
+									echo "<img class = '1sttool' src='pic/medal/cu_black.png' alt='item button'>";								
 								}
-							?>
-						</div>
-						<div class = "second">
-							<?php 
 								if ( $total > 2000 ) {
-									echo "<div id = '1sttool'>";
-									echo "<img src='pic/button/getitem.png' alt='item button'>";								
-									echo "</div>";
+									echo "<img  class = '1sttool' src='pic/medal/silver.png' alt='item button'>";			
 								} else {
-									echo "<div id = '1sttool'>";
-									echo "<img src='pic/button/canfetitem.png' alt='item button' onclick = ''>";
-									echo "</div>";								
+									echo "<img  class = '1sttool' src='pic/medal/silver_black.png' alt='item button' onclick = ''>";								
 								}
-							?>
-						</div>
-						<div class = "second">
-							<?php 
-								if ( $total > 4000 ) {
-									echo "<div id = '1sttool'>";
-									echo "	<img src='pic/button/getitem.png' alt='item button'>";
-									echo "</div>";	
+								if ( $total > 6000 ) {
+									echo "	<img  class = '1sttool' src='pic/medal/golden.png' alt='item button'>";	
 								} else {
-									echo "<div id = '1sttool'>";
-									echo "	<img src='pic/button/canfetitem.png' alt='item button' onclick = ''>";
-									echo "</div>";							
+									echo "	<img  class = '1sttool' src='pic/medal/golden_black.png' alt='item button' onclick = ''>";						
 								}
 							?>	
 						</div>

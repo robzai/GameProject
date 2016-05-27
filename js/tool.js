@@ -3,7 +3,7 @@ var toolOnOff = 0;
 function useTool(){		//1
 	//alert("use tool");
 	var toolNum = getToolNumber();
-	alert("toolNum" + toolNum);
+	//alert("toolNum" + toolNum);
 	if(toolNum > 0){
 		setToolOn();
 		alert("minuns" + (toolNum-1));

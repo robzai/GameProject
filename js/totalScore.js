@@ -18,7 +18,7 @@ function totalScore(){
 	//alert("updatae total score");
 }
 
-//function getTotal(){
-//	return totalScore;
-//}
+function getTotal(){
+	return parseInt(localStorage.totalScore);
+}
 
