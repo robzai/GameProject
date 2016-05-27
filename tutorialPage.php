@@ -25,7 +25,7 @@
 							<li><a href="#pic2"><img src="pic/tutorial/tutorial2.png" alt="pic2" /></a></li>
 							<li><a href="#pic3"><img src="pic/tutorial/tutorial3.png" alt="pic3" /></a></li>
 							<li><a href="#pic4"><img src="pic/tutorial/tutorial4.png" alt="pic4" /></a></li>
-							<li class="close"><a href="index.html"><img src="click/close.gif" alt="Close image" /></a></li>
+							<li class="close"><a href="homepage.php"><img src="pic/button/homeButton.png" alt="home button" /></a></li>
 						</ul>
 						<div id="fullsize">
 							<div id="pic1"><img src="pic/tutorial/tutorial1.png" alt="pic1" /></div>
