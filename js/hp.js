@@ -65,7 +65,7 @@ function updateScore(){
 	//scoreSend = score;
 	reset();
     localStorage.levelScore = parseInt(score);
-	alert("in hp, update each level's score" + localStorage.levelScore);
+	//alert("in hp, update each level's score" + localStorage.levelScore);
 }
 
 /*
