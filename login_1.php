@@ -1,10 +1,17 @@
 <?php
-
+	if($_POST['pwd'] != $_POST['repwd']) {
+		echo "your passwords don't match";		
+		echo "<script>setTimeout('window.location=\'signup.php\';', 3000)</script>";
+		die();
+	} else {
+		$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+		$sql = "INSERT INTO rank VALUES ('$_POST[username]','$_POST[pwd]',0,0,0,0,0)";
+		mysqli_query($db,$sql);	
+	}
 ?>
-
 <html lang="en">
 	<head>
-		<title>Sign Up</title>
+		<title>Sign In</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/homeNLevel.css"/>
 		<link href="css/login.css" rel="stylesheet" type="text/css" />
@@ -16,15 +23,14 @@
 				<div class="col-xs-4 visible-md visible-lg"></div>
 				<div class="col-xs-4">
 					<div class = "main">
-						<div class ="header">
-							<img src = "pic/header/signup.png">
+						<div class = "header">
+							<img src = "pic/header/login.png">
 						</div>
 						<div class = "login">
 							<!-- this is the info that will pass to leaderboard-->
-							<form action="login_1.php" method="post">
+							<form action="homepage.php" method="post">
                                 username: <input name="username" /><br><br>
 								password: <input name="pwd" /><br><br>
-								repeat pwd: <input name="repwd" /><br><br>
 								<input type="submit" name="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<input type="reset" />
 							</form>

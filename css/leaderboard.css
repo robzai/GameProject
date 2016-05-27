@@ -1,3 +1,9 @@
+.main {
+	background-image: url(pic/rankBG.png);
+	width: 320px;
+	height: 480px;
+}
+
 table {
 	text-align: center;
 	height:250px;
@@ -58,22 +64,14 @@ table tr td:first-child{
 	opacity: 0.1;
 }
 
-.main {
-	background-image: url(pic/bg1.png);
-	width: 320px;
-	height: 480px;
-}
-.rank {
-	width: 330px;
-	height:100px;
-	padding-top: 25%;
-	margin-left: 5%;
-
-}
-
 .scoretable {
 	width: 280px;
 	height: 300px;
 	padding-top: 25%;
 	margin-left: 8%;
+}
+
+#homeButton {
+	padding-top:30%;
+	text-align: center;
 }
