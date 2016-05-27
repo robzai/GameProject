@@ -71,5 +71,6 @@ window.onload = function(){
 		initScore();
 	}
 	setToolNumber(1);
+	showToolNum();
 	//getLevelSrc();  //for testing
 }

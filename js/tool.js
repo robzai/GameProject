@@ -6,7 +6,7 @@ function useTool(){		//1
 	alert("toolNum" + toolNum);
 	if(toolNum > 0){
 		setToolOn();
-		alert("minuns" + toolNum-1);
+		alert("minuns" + (toolNum-1));
 		setToolNumber(toolNum-1);
 	}			
 }
@@ -29,4 +29,8 @@ function getToolNumber(){	//5
 	
 function setToolNumber(Num){	//6
 	localStorage.toolNumber = Num;
+}
+
+function showToolNum(){
+	document.getElementById("numHint").innerHTML = getToolNumber() + "x";
 }

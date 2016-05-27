@@ -152,7 +152,7 @@
 							<a  href="index.html"><img class = "setting" src="pic/end.png"></a>
 							<!-- hints tool button-->
 							<img class = "hints" src="pic/starTool.png"  onclick="useTool()">
-							<div class = "numofhints"><?php echo $num."&times;";?></div>
+							<div id="numHint" class = "numofhints"></div>
 						</div><!-- end of footer-->
 					</div><!-- end of main -->
 					<script src="js/showclosediv.js"></script>

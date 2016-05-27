@@ -61,6 +61,11 @@ function didDrop($src, $dst){
         minusLife();
     }
 	$src.hide();
+	
+	if (getToolOnOff() == 1){
+		setToolOff();
+		showToolNum();
+	}
 	// show the easrter egg game if an easter egg is dropped
 	if(returnGarbageType() == "easter"){
 		newgame.show();
