@@ -58,7 +58,7 @@
 								  href="level9.php"
 								  alt="level 9" />
 							<area shape="rect" coords="133,403,187,455"
-								  href="index_in.php"
+								  href="homepage.php"
 								  alt="home button" />								  
 						</map>
 						<div>

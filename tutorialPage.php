@@ -21,17 +21,29 @@
 				<div class="col-xs-4">
 					<div id="gallery">
 						<ul id="thumbnails">
-							<li><a href="#pic1"><img src="pic/tutorial/tutorial1.png" alt="pic1" /></a></li>
-							<li><a href="#pic2"><img src="pic/tutorial/tutorial2.png" alt="pic2" /></a></li>
-							<li><a href="#pic3"><img src="pic/tutorial/tutorial3.png" alt="pic3" /></a></li>
-							<li><a href="#pic4"><img src="pic/tutorial/tutorial4.png" alt="pic4" /></a></li>
+							<li><a href="#pic1"><img src="pic/tutorial/tutorial1.png" alt="tutorial1" /></a></li>
+							<li><a href="#pic2"><img src="pic/tutorial/tutorial2.png" alt="tutorial2" /></a></li>
+							<li><a href="#pic3"><img src="pic/tutorial/tutorial3.png" alt="tutorial3" /></a></li>
+							<li><a href="#pic4"><img src="pic/tutorial/tutorial4.png" alt="tutorial4" /></a></li>
+							<li><a href="#pic5"><img src="pic/tutorial/tutorial5.png" alt="tutorial5" /></a></li>
+							<li><a href="#pic6"><img src="pic/tutorial/tutorial6.png" alt="tutorial6" /></a></li>
+							<li><a href="#pic7"><img src="pic/tutorial/tutorial7.png" alt="tutorial7" /></a></li>
+							<li><a href="#pic8"><img src="pic/tutorial/tutorial8.png" alt="tutorial8" /></a></li>
+							<li><a href="#pic9"><img src="pic/tutorial/tutorial9.png" alt="tutorial9" /></a></li>
+							<li><a href="#pic10"><img src="pic/tutorial/tutorial10.png" alt="tutorial10" /></a></li>
 							<li class="close"><a href="homepage.php"><img src="pic/button/homeButton.png" alt="home button" /></a></li>
 						</ul>
 						<div id="fullsize">
-							<div id="pic1"><img src="pic/tutorial/tutorial1.png" alt="pic1" /></div>
-							<div id="pic2"><img src="pic/tutorial/tutorial2.png" alt="pic2" /></div>
-							<div id="pic3"><img src="pic/tutorial/tutorial3.png" alt="pic3" /></div>
-							<div id="pic4"><img src="pic/tutorial/tutorial4.png" alt="pic4" /></div>
+							<div id="pic1"><img src="pic/tutorial/tutorial1.png" alt="tutorial1" /></div>
+							<div id="pic2"><img src="pic/tutorial/tutorial2.png" alt="tutorial2" /></div>
+							<div id="pic3"><img src="pic/tutorial/tutorial3.png" alt="tutorial3" /></div>
+							<div id="pic4"><img src="pic/tutorial/tutorial4.png" alt="tutorial4" /></div>
+							<div id="pic5"><img src="pic/tutorial/tutorial5.png" alt="tutorial5" /></div>
+							<div id="pic6"><img src="pic/tutorial/tutorial6.png" alt="tutorial6" /></div>
+							<div id="pic7"><img src="pic/tutorial/tutorial7.png" alt="tutorial7" /></div>
+							<div id="pic8"><img src="pic/tutorial/tutorial8.png" alt="tutorial8" /></div>
+							<div id="pic9"><img src="pic/tutorial/tutorial9.png" alt="tutorial9" /></div>
+							<div id="pic10"><img src="pic/tutorial/tutorial10.png" alt="tutorial10" /></div>
 							<div id="close"></div>
 						</div>
 					</div>

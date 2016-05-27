@@ -292,7 +292,6 @@
 							<div id="numHint" class = "numofhints"></div>
 						</div><!-- end of footer-->
 					</div><!-- end of main -->
-					<script src="js/showclosediv.js"></script>
 					<script src="js/memorizetime.js"></script>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 					<script src="js/jquery.drag-drop.plugin.js"></script>

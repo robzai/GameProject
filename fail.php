@@ -1,5 +1,7 @@
 <?php
+	//to make sure the player is under login status
 	session_start();
+	//connect to the database
 	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
 	$sql = "SELECT numoftools FROM rank WHERE userName LIKE '$_SESSION[username]'";
 	$result = mysqli_query($db,$sql);
@@ -31,10 +33,7 @@
 							<div class = "next">
 								<img src="pic/button/rankButton.png" onclick="upscore.submit()"> 
 							</div>
-							
-							
 							<!-- this is the info that will pass to leaderboard-->
-
 						</div>
 					</div>	
 				</div>
