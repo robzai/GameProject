@@ -20,7 +20,7 @@ function init(){
     navigate to fail page if there is no more life bar
 */
 function run(){
-	if(hp > 0)
+	if(hp > 1)
   	hpContainer.removeChild(heart[--hp]);
   else{
   	clearInterval(timer);
@@ -35,7 +35,7 @@ function run(){
 */
 function minusLife(){
     for(i=0; i<30; i++){
-        if(hp>0){
+        if(hp>1){
             hpContainer.removeChild(heart[--hp]);
         }else{
 			updateScore();
