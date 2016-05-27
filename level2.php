@@ -182,7 +182,6 @@
 							</div>	<!-- end of canTouch-->
 						</div><!-- end of game-->
 						<div class = "footer">
-							<div class = "numofhints"><?php echo $num."&times;";?></div>
 							<!-- setting button-->
 							<a  href="levelpage.php"><img class = "setting" src="pic/end.png"></a>
 							<!-- hints tool button-->
