@@ -1,15 +1,15 @@
 <?php 
 	session_start();
 	if(!isset($_SESSION['username'])) {
-	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
-	$sql = "SELECT pwd FROM rank WHERE userName LIKE '$_POST[username]'";
-	$result = mysqli_query($db,$sql);
-	$num = mysqli_num_rows($result);
-	if ($num <= 0) {
-		echo "You need to sign up first!";		
-		echo "<script>setTimeout('window.location=\'signup.php\';', 3000)</script>";
-		die();
-	}
+		$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+		$sql = "SELECT pwd FROM rank WHERE userName LIKE '$_POST[username]'";
+		$result = mysqli_query($db,$sql);
+		$num = mysqli_num_rows($result);
+		if ($num <= 0) {
+			echo "You need to sign up first!";		
+			echo "<script>setTimeout('window.location=\'signup.php\';', 3000)</script>";
+			die();
+		}
 	while($row = mysqli_fetch_assoc($result)){
 		foreach($row as $key=>$value){
 			if (strcmp($value,$_POST['pwd']) == 0) {
@@ -28,7 +28,6 @@
 	<head>
 		<title>Free Throw - Home Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/homeNLevel.css"/>
 		<link href="css/index.css" rel="stylesheet" type="text/css" />
 		<link href="css/bootstrap/superhero/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
