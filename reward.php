@@ -66,7 +66,7 @@
 							?>	
 						</div>
 						<div id = "homeButton">
-							<a href="index_in.php"><img src="pic/button/homeButton.png" alt="home button"></a>
+							<a href="homepage.php"><img src="pic/button/homeButton.png" alt="home button"></a>
 						</div>
 					</div>	
 				</div>
