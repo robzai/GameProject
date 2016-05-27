@@ -1,21 +1,34 @@
 <?php 
+	//make sure the player is under login status.
 	session_start();
+	//if there is no login player set.
 	if(!isset($_SESSION['username'])) {
+		//connect to database
 		$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+		//select the password from database where the user name equals to the player input
 		$sql = "SELECT pwd FROM rank WHERE userName LIKE '$_POST[username]'";
+		//do the select execution
 		$result = mysqli_query($db,$sql);
+		//get the number of result
 		$num = mysqli_num_rows($result);
+		//if there is no result
 		if ($num <= 0) {
+			//tell the player to sign up first, and then navigate to sign up page
 			echo "You need to sign up first!";		
 			echo "<script>setTimeout('window.location=\'signup.php\';', 3000)</script>";
 			die();
 		}
+    //while there are results 
 	while($row = mysqli_fetch_assoc($result)){
+		//seperate the result by key and value. key means the title
 		foreach($row as $key=>$value){
+			//if the record and player input match
 			if (strcmp($value,$_POST['pwd']) == 0) {
+				//set the session username and password
 				$_SESSION['username']=$_POST['username'];
 				$_SESSION['pwd']=$_POST['pwd'];
 			} else {
+				//if doesn't match, show the error message and navigate to login page again
 				echo "please check your username and password again!";
 				echo "<script>setTimeout('window.location=\'login.php\';', 3000)</script>";
 				die();

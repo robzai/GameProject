@@ -1,3 +1,7 @@
+/*
+	initialize the HP function
+*/
+
 function initHP(){
 	hpContainer = document.getElementById('hp');
 	init();

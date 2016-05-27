@@ -46,6 +46,9 @@ var importTool=document.createElement("script");
     importTool.setAttribute("src","./js/tool.js");
     document.body.appendChild(importTool);	
 
+/*
+	this function will run after a player drop a garbage 
+*/
 function didDrop($src, $dst){
 	// this function is in match.js							
 	getSrc($src);
@@ -61,7 +64,7 @@ function didDrop($src, $dst){
         minusLife();
     }
 	$src.hide();
-	
+	//this function is in tool.js
 	if (getToolOnOff() == 1){
 		setToolOff();
 		showToolNum();

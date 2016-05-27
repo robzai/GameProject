@@ -1,4 +1,9 @@
 /*
+	this js is to random generate garbages base on what 
+	garbage bins we have.
+*/
+
+/*
     import randomCan.js
 */
 var importRanCan=document.createElement("script");

@@ -57,12 +57,14 @@ var importRanGarb=document.createElement("script");
     document.body.appendChild(importRanGarb);		
 	
 /*
-	when wind is loaded flip puzzles after several seconds 
-    reset next scores to zero
+	when the game page is loaded, run this function
 */
 window.onload = function(){
+	//this function is in randomCan.js
 	fecthRandCan();
+	//this function is in randomGarbage.js
 	randomGarbPic();
+	//this function is in memorizetime.js
 	startTimmer();
 	//initFlip();	
     //initHP();

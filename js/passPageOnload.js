@@ -1,4 +1,8 @@
 /*
+	This function will run when the pass page is loaded. 
+*/
+
+/*
     import totalScore.js
 */	
 var importTotalScore=document.createElement("script");

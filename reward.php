@@ -1,13 +1,14 @@
 <?php
+	//make sure the player is under login status
 	session_start();
+	//connect to the database
 	$db = mysqli_connect("localhost", "root","root","score") or die(mysqli_connect_error());
+	//get the player's info from database
 	$sql = "SELECT * FROM rank WHERE userName LIKE '$_SESSION[username]'";
 	$result = mysqli_query($db,$sql);
 	$row = mysqli_fetch_assoc($result);
+	//set the total as the highest mark user has 
 	$total = $row["score"];
-	$cu = $row["1sttool"];	
-	$silver = $row["2ndtool"];	
-	$golden = $row["3rdtool"];	
 ?>
 
 <html lang="en">
@@ -24,10 +25,12 @@
 				<div class="col-xs-4">
 					<div class = "main">
 						<div class = "displayscore">
+							//show the player's highest score
 							<?php echo "Highest Score: ".$total ?>
 						</div>
 						<div class = "medal">
 							<?php 
+								//show different pics under different conditions
 								if ( $total > 500) {
 									echo "<img class = '1sttool' src='pic/medal/cu.png' alt='item button'>";								
 								} else {
